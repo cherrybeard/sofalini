@@ -1,0 +1,15 @@
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
+	margin: 0;
+	padding: 0;
+}
+p, h1, h2, h3, span {
+	cursor: default;
+}
+html {
+	font-size: 16px;
+}
+
+@import "UI/fonts";
+@import "UI/color";
+
+@import "slider/slider.scss";
