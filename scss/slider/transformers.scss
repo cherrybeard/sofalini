@@ -1,0 +1,29 @@
+.transformers {
+	.slick-slide {background:#fff top/70% no-repeat;}
+		.first { background-image: url('../img/transformers/transformer01.png'); }
+		.second{ background-image: url('../img/transformers/transformer01.png'); }
+		.third { background-image: url('../img/transformers/transformer01.png'); }
+
+		.information:before {
+			content: "";
+			position: absolute;
+			height: 25vh;
+			width: 1px;
+			background-color: #888888;;
+			bottom: 10px;
+			left: -50px;}
+	}
+
+@include mq("desktop", max) {
+	.transformers {
+		height: 70vh;
+		.slick-slide {
+			height: 500px;
+			border: 1px solid red;
+			font-size: 0.5em;
+			width: 100vw;
+			background-size: 100%;
+			background-position: center;}
+	}
+	
+}

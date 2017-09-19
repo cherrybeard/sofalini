@@ -4,29 +4,14 @@ head
 	meta(charset='UTF-8')
 	link(rel='stylesheet', href='css/main.css')
 	link(rel="stylesheet", href="css/slick.css")
-	//- link(rel="stylesheet", href="css/slick-theme.css")
 		
 	meta(name='viewport', content='width=device-width')
 	<title>Sofalini</title>
 body
-	section.opa-slider
-		h2.caption Трансформеры
-		.slider
-			.slick-slide.first 
-				.information
-					h3 клаус-6
-					p.about Элегантный и оригинальный дизайн и&nbsp;небольшие габариты
-					p.cost от 65 990 ₽
-			.slick-slide.second
-				.information
-					h3 best
-					p.about Универсальные 
-					p.cost от 75 990 ₽
-			.slick-slide.third
-				.information
-					h3 popka 777
-					p.about Элегантный и оригинальный дизайн и&nbsp;небольшие габариты
-					p.cost от 25 990 ₽
+	include transformers.jade
+	include single.jade
+	include footer.jade
+	
 
 	
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")

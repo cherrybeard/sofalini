@@ -8,8 +8,9 @@ p, h1, h2, h3, span {
 html {
 	font-size: 16px;
 }
-
+@import "mixins.scss";
 @import "UI/fonts";
 @import "UI/color";
 
-@import "slider/slider.scss";
+@import "slider/slider.scss", "slider/_media-slider.scss";
+@import "footer/main-footer";

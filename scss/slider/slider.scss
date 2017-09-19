@@ -1,35 +1,59 @@
-.opa-slider {
+// basic style
+
+
+
+.main-slider {
 	position: relative;
-	height: 100vh;
+	height: 700px;
 	background-color: #fff;
+
+	.caption {
+	z-index: 99;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	font-size: 70px;
+ 	text-align: left;
+  	color: #222222;}
+
 	.slider {
 		display: flex;
 		align-items: flex-end;
 		position: relative;
 		background-color: #fff;
 		height: 100%;
-		.slick-slide {
-			outline:0;
-			position: relative;
-			width: 80vw;
-			height: 80vh;
-			border: 1px solid red;
-			margin: 0 10px;
-			cursor: pointer;
-		}
-		.first {
-			background:#fff url('../img/transformer01.png') top/80% no-repeat;
-		}
-		.second{
-			background:#fff url('../img/eco01.png') top/80% no-repeat;
-		}
-		.third {
-			background:#fff url('../img/premium01.png') top/80% no-repeat;
-		}
-	}
+		width: 100%;}
+
+	.slick-slide {
+		outline:0;
+		position: relative;
+		border: 1px solid red;
+		width: 60vw;
+		height: 500px;
+		margin: 0 10px;
+		cursor: pointer;}
+		
+	.information {
+		position: absolute;
+		left: 30%;
+		bottom: 10%;
+		line-height: 1.28;
+		text-align: left;
+		color: #666666;
+		h3 {
+			padding-bottom: 5px;
+			letter-spacing: 3.2px;
+	  		text-transform: uppercase;}
+		.about {
+			height: 50px;
+			width: 300px;
+			font-size: 17px;}
+		.cost {
+			font-size: 35px;
+	  		color: #000000;
+	  		font-weight: bold;}
 }
-
-
+}
 
 .slick-arrow {
 	outline:0;
@@ -38,20 +62,23 @@
 	background-color: #fff;
 	border: none;
 	position: absolute;
-	top: 50%;
-	width: 100px;
-	height: 100px;
+	top: 62%;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	border: solid 1px #dddddd;
+	&:hover {
+		background-color: #dddddd;
+	}
 	&:before {
 		display: inline-block;
 		content: "";
 		position: relative;
-		left: -5px;
-		width: 25px;
-	  	height: 25px;
+		left: -2px;
+		top: 2px;
+		width: 10px;
+	  	height: 10px;
 	  	transform: rotate(-45deg);
-	  	border-radius: 5px;
 		border: 6px solid black;
 		border-top: transparent;
 		border-left: transparent;}
@@ -59,44 +86,27 @@
 }
 .slick-prev {
 	left: 100px;
-	transform: rotate(180deg)
-}
-.slick-next {
-	right: 100px;
-}
+	transform: rotate(180deg);}
 
-.caption {
-	z-index: 99;
-	position: absolute;
-	left: 50px;
-	top: 50px;
-	font-size: 70px;
- 	text-align: left;
-  	color: #222222;
+.slick-next { right: 100px; }
+
+// .hidden {
+//     opacity: 0;
+//     pointer-events:none;
+//     transition: 0.5s;
+// }
+
+
+
+
+// White blink fix
+// ------------------
+.slick-track,
+.slick-list {
+-webkit-perspective: 2000;
+-webkit-backface-visibility: hidden;
 }
-.information {
-	position: absolute;
-	left: 30%;
-	bottom: 10%;
-	line-height: 1.28;
-	text-align: left;
-	color: #666666;
-	&:before {
-		content: "";
-		position: absolute;
-		height: 400px;
-		width: 1px;
-		background-color: #888888;;
-		bottom: 10px;
-		left: -50px;}
-	h3 {
-		letter-spacing: 3.2px;
-  		text-transform: uppercase;}
-	.about {
-		width: 300px;
-		font-size: 17px;}
-	.cost {
-		font-size: 35px;
-  		color: #000000;
-  		font-weight: bold;}
-}
+// ------------------
+
+@import "transformers.scss";
+@import "single";

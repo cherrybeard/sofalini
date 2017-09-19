@@ -8,11 +8,19 @@ p, h1, h2, h3, span {
 html {
   font-size: 16px; }
 
-@font-face {}.opa-slider {
+@font-face {}.main-slider {
   position: relative;
-  height: 100vh;
+  height: 700px;
   background-color: #fff; }
-  .opa-slider .slider {
+  .main-slider .caption {
+    z-index: 99;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 70px;
+    text-align: left;
+    color: #222222; }
+  .main-slider .slider {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -23,21 +31,35 @@ html {
     align-items: flex-end;
     position: relative;
     background-color: #fff;
-    height: 100%; }
-    .opa-slider .slider .slick-slide {
-      outline: 0;
-      position: relative;
-      width: 80vw;
-      height: 80vh;
-      border: 1px solid red;
-      margin: 0 10px;
-      cursor: pointer; }
-    .opa-slider .slider .first {
-      background: #fff url("../img/transformer01.png") top/80% no-repeat; }
-    .opa-slider .slider .second {
-      background: #fff url("../img/eco01.png") top/80% no-repeat; }
-    .opa-slider .slider .third {
-      background: #fff url("../img/premium01.png") top/80% no-repeat; }
+    height: 100%;
+    width: 100%; }
+  .main-slider .slick-slide {
+    outline: 0;
+    position: relative;
+    border: 1px solid red;
+    width: 60vw;
+    height: 500px;
+    margin: 0 10px;
+    cursor: pointer; }
+  .main-slider .information {
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+    line-height: 1.28;
+    text-align: left;
+    color: #666666; }
+    .main-slider .information h3 {
+      padding-bottom: 5px;
+      letter-spacing: 3.2px;
+      text-transform: uppercase; }
+    .main-slider .information .about {
+      height: 50px;
+      width: 300px;
+      font-size: 17px; }
+    .main-slider .information .cost {
+      font-size: 35px;
+      color: #000000;
+      font-weight: bold; }
 
 .slick-arrow {
   outline: 0;
@@ -46,22 +68,24 @@ html {
   background-color: #fff;
   border: none;
   position: absolute;
-  top: 50%;
-  width: 100px;
-  height: 100px;
+  top: 62%;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: solid 1px #dddddd; }
+  .slick-arrow:hover {
+    background-color: #dddddd; }
   .slick-arrow:before {
     display: inline-block;
     content: "";
     position: relative;
-    left: -5px;
-    width: 25px;
-    height: 25px;
+    left: -2px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    border-radius: 5px;
     border: 6px solid black;
     border-top: transparent;
     border-left: transparent; }
@@ -75,37 +99,139 @@ html {
 .slick-next {
   right: 100px; }
 
-.caption {
-  z-index: 99;
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  font-size: 70px;
-  text-align: left;
-  color: #222222; }
+.slick-track,
+.slick-list {
+  -webkit-perspective: 2000;
+  -webkit-backface-visibility: hidden; }
 
-.information {
+.transformers .slick-slide {
+  background: #fff top/70% no-repeat; }
+
+.transformers .first {
+  background-image: url("../img/transformers/transformer01.png"); }
+
+.transformers .second {
+  background-image: url("../img/transformers/transformer01.png"); }
+
+.transformers .third {
+  background-image: url("../img/transformers/transformer01.png"); }
+
+.transformers .information:before {
+  content: "";
   position: absolute;
-  left: 30%;
-  bottom: 10%;
-  line-height: 1.28;
-  text-align: left;
-  color: #666666; }
-  .information:before {
-    content: "";
+  height: 25vh;
+  width: 1px;
+  background-color: #888888;
+  bottom: 10px;
+  left: -50px; }
+
+@media screen and (max-width: 1247px) {
+  .transformers {
+    height: 70vh; }
+    .transformers .slick-slide {
+      height: 500px;
+      border: 1px solid red;
+      font-size: 0.5em;
+      width: 100vw;
+      background-size: 100%;
+      background-position: center; } }
+
+.single .slick-slide {
+  width: 500px;
+  background: #fff url("../img/single/single01.png") top/60% no-repeat; }
+
+@media screen and (max-width: 1247px) {
+  .single {
+    height: 70vh; }
+    .single .caption {
+      font-size: 2em; }
+    .single .slick-slide {
+      height: 60vh;
+      border: 1px solid red;
+      font-size: 0.5em;
+      width: 100vw;
+      background-size: 60%;
+      background-position: center 10%; } }
+
+@media screen and (max-width: 1247px) {
+  .main-slider .caption {
+    left: 20px;
+    top: 20px;
+    font-size: 2em; }
+  .main-slider .information {
+    left: 10%; }
+    .main-slider .information:before {
+      display: none; }
+  .main-slider .slick-arrow {
+    visibility: hidden; } }
+
+.main-footer {
+  height: 80vh;
+  position: relative;
+  width: 95vw;
+  background-color: #AAAAAA;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 100px; }
+  .main-footer .caption {
+    width: 700px;
     position: absolute;
-    height: 400px;
-    width: 1px;
-    background-color: #888888;
-    bottom: 10px;
-    left: -50px; }
-  .information h3 {
-    letter-spacing: 3.2px;
-    text-transform: uppercase; }
-  .information .about {
-    width: 300px;
-    font-size: 17px; }
-  .information .cost {
-    font-size: 35px;
-    color: #000000;
-    font-weight: bold; }
+    top: 50px;
+    left: 50px;
+    font-size: 4.375rem;
+    line-height: 1.06;
+    text-align: left;
+    color: white; }
+  .main-footer .address {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px; }
+    .main-footer .address h3 {
+      padding-bottom: 10px;
+      font-size: 32px;
+      text-align: left;
+      color: #ffffff; }
+    .main-footer .address p {
+      font-size: 1em;
+      width: 230px;
+      text-align: left;
+      padding-bottom: 5px;
+      color: #dfdfdf; }
+    .main-footer .address .map {
+      width: 275px;
+      height: 42px;
+      margin-top: 30px;
+      border-radius: 100px;
+      background-color: transparent;
+      border: 1px solid white;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2.8px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase; }
