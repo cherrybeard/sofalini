@@ -27,12 +27,12 @@
 	.slick-slide {
 		outline:0;
 		position: relative;
-		border: 1px solid red;
+		// border: 1px solid red;
 		width: 60vw;
 		height: 500px;
 		margin: 0 10px;
 		cursor: pointer;}
-		
+
 	.information {
 		position: absolute;
 		left: 30%;
@@ -90,11 +90,10 @@
 
 .slick-next { right: 100px; }
 
-// .hidden {
-//     opacity: 0;
-//     pointer-events:none;
-//     transition: 0.5s;
-// }
+.hidden {
+    opacity: 0;
+    pointer-events:none;
+}
 
 
 

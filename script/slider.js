@@ -2,6 +2,7 @@ $(function() {
 
 	$(".slider").slick({
 		infinite: true,
+		// slidesToShow: 2,
 		variableWidth: true,
 		initialSlide: 0,
 		prevArrow: '<button type="button" data-role="none" class="slick-prev"></button>',
@@ -10,21 +11,21 @@ $(function() {
 
 	});
 
-// 	$('.slider').on('afterChange', function (event, slick, currentSlide) {
+	// $('.slider').on('afterChange', function (event, slick, currentSlide) {
 
-// 		if(currentSlide == 0) {
-//             $('.slick-prev').addClass('hidden');
-//         }
-//         else {
-//             $('.slick-prev').removeClass('hidden');
-//         }  
+	// 	if(currentSlide == 0) {
+ //            $('.slick-prev').addClass('hidden');
+ //        }
+ //        else {
+ //            $('.slick-prev').removeClass('hidden');
+ //        }  
 
-//         if(currentSlide === 2) {
-//             $('.slick-next').addClass('hidden');
-//         }
-//         else {
-//             $('.slick-next').removeClass('hidden');
-//         }
+ //        if(currentSlide === 4) {
+ //            $('.slick-next').addClass('hidden');
+ //        }
+ //        else {
+ //            $('.slick-next').removeClass('hidden');
+ //        }
 
-// });
+	// });
 });
