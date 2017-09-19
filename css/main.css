@@ -8,7 +8,8 @@ p, h1, h2, h3, span {
 html {
   font-size: 16px; }
 
-@font-face {}.main-slider {
+@font-face {}
+.main-slider {
   position: relative;
   height: 700px;
   background-color: #fff; }
@@ -21,13 +22,7 @@ html {
     text-align: left;
     color: #222222; }
   .main-slider .slider {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
     align-items: flex-end;
     position: relative;
     background-color: #fff;
@@ -82,8 +77,6 @@ html {
     top: 2px;
     width: 10px;
     height: 10px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     border: 6px solid black;
     border-top: transparent;
@@ -91,8 +84,6 @@ html {
 
 .slick-prev {
   left: 100px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .slick-next {
@@ -109,16 +100,12 @@ html {
 
 .transformers .slick-slide {
   background: #fff center/70% no-repeat; }
-
 .transformers .first {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .second {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .third {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .information:before {
   content: "";
   position: absolute;
@@ -138,7 +125,6 @@ html {
       width: 100vw;
       background-size: 100%;
       background-position: center; } }
-
 .single .slick-slide {
   width: 500px;
   background: #fff url("../img/single/single01.png") top/60% no-repeat; }
@@ -155,7 +141,6 @@ html {
       width: 100vw;
       background-size: 60%;
       background-position: center 10%; } }
-
 @media screen and (max-width: 1247px) {
   .main-slider .caption {
     left: 20px;
@@ -167,26 +152,15 @@ html {
       display: none; }
   .main-slider .slick-arrow {
     visibility: hidden; } }
-
 .top-footer {
   height: 80vh;
   position: relative;
   width: 95vw;
   background: #aaa url("../img/footer/shops.jpg") center/cover no-repeat;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
   align-items: flex-end;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 100px; }
   .top-footer .caption {
@@ -199,21 +173,13 @@ html {
     text-align: left;
     color: white; }
   .top-footer .address {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    position: relative;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 400px;
-    height: 600px; }
+    height: 60%;
+    border: 1px solid red; }
     .top-footer .address h3 {
       padding-bottom: 10px;
       font-size: 32px;
@@ -226,9 +192,10 @@ html {
       padding-bottom: 5px;
       color: #dfdfdf; }
     .top-footer .address .map {
+      bottom: 10%;
+      position: absolute;
       width: 275px;
       height: 42px;
-      margin-top: 30px;
       border-radius: 100px;
       background-color: transparent;
       border: 1px solid white;
@@ -243,14 +210,7 @@ html {
   .top-footer {
     height: auto;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0; }
     .top-footer .caption {
@@ -271,4 +231,7 @@ html {
         width: 50%;
         margin: 0 auto; }
       .top-footer .address .map {
+        position: relative;
+        bottom: auto;
+        align-items: center;
         margin: 25px auto 0 auto; } }

@@ -19,11 +19,15 @@
   		text-align: left;
   		color: white;}
 	.address {
+		position: relative;
+		// box-sizing: border-box;
+		// padding: 100px 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 400px;
-		height: 600px;
+		height: 60%;
+		border: 1px solid red;
 		h3 {
 			padding-bottom: 10px;
 			font-size: 32px;
@@ -38,9 +42,11 @@
   			color: #dfdfdf;}
 
   		.map {
+  			// display: inline-block;
+  			bottom: 10%;
+  			position: absolute;
   			width: 275px;
   			height: 42px;
-  			margin-top: 30px;
   			border-radius: 100px;
   			background-color: transparent;
   			border: 1px solid white;
