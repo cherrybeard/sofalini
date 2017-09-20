@@ -27,7 +27,6 @@
 	.slick-slide {
 		outline:0;
 		position: relative;
-		// border: 1px solid red;
 		width: 60vw;
 		height: 500px;
 		margin: 0 10px;
@@ -100,11 +99,11 @@
 
 // White blink fix
 // ------------------
-.slick-track,
-.slick-list {
--webkit-perspective: 2000;
--webkit-backface-visibility: hidden;
-}
+// .slick-track,
+// .slick-list {
+// -webkit-perspective: 2000;
+// -webkit-backface-visibility: hidden;
+// }
 // ------------------
 
 @import "transformers.scss";

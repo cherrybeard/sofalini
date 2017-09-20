@@ -1,0 +1,48 @@
+.options {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 0 50px;
+
+	span {
+		position: absolute;
+		top: -50px;
+		left: 30px;
+  		font-size: 121.6px;
+  		line-height: 1.25;
+  		text-align: left;
+  		color: #fe7f12;
+	}
+	h3 {
+		font-weight: normal;
+		width: 40%;
+		text-align: left;
+		box-sizing: border-box;
+		padding: 0 10px 0 50px;
+		font-family: inherit;
+  		font-size: 30px;
+	}
+	p {
+		width: 33%;
+		font-family: inherit;
+		text-align: right;
+  		color: #666666;
+  		box-sizing: border-box;
+  		padding-right: 50px;
+	}
+	button {
+		border: none;
+		width: 205px;
+ 		height: 39px;
+  		border-radius: 8px;
+ 		background-color: #fe7f12;
+ 		font-size: 13px;
+  		font-weight: bold;
+  		letter-spacing: 1.1px;
+  		text-align: center;
+  		color: #ffffff;
+  		text-transform: uppercase;
+  		font-family: inherit;
+	}
+}

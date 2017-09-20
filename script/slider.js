@@ -2,7 +2,6 @@ $(function() {
 
 	$(".slider").slick({
 		infinite: true,
-		// slidesToShow: 2,
 		variableWidth: true,
 		initialSlide: 0,
 		prevArrow: '<button type="button" data-role="none" class="slick-prev"></button>',

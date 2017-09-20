@@ -1,0 +1,10 @@
+.discount-banner {
+	height: 110px;
+	width: 60vw;
+	margin: 50px auto;
+	background-color: #eeeeee;
+	font-family: 'Rubik', sans-serif;
+	position: relative;
+}
+@import "options.scss";
+@import "discount-offer.scss";

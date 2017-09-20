@@ -1,0 +1,67 @@
+.discount-offer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 100px 0 50px;
+	span {
+		position: absolute;
+		top: -25px;
+		font-size: 90px;
+  		text-align: left;
+ 		color: #fe7f12;
+	}
+	h3 {
+		font-weight: normal;
+		text-align: left;
+		font-size: 30px;
+		align-self: flex-end;
+		padding-bottom: 10px;
+		padding-left: 0px;
+	}
+
+
+
+
+	.get-promo {
+
+		position: relative;
+		// width: 40%;
+		// border: 1px solid red;
+		input {
+			width: 266px;
+  			height: 35px;
+			border: solid 2px #ababab;
+			border-radius: 4px;
+			font-size: 18px;
+			outline: none;
+			font-family: 'Lato', sans-serif;
+			padding-left: 10px;
+			color: #aaaaaa;}
+		button {
+			position: absolute;
+			left: 200px;
+			width: 205px;
+  			height: 39px;
+			border-radius: 8px;
+			border: none;
+			background-color: #fe7f12;
+			font-family: 'Rubik', sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;}
+		label {
+			display: block;
+			font-family: 'Lato', sans-serif;
+			font-size: 18px;
+			text-align: left;
+			color: #666666;
+			padding-bottom: 5px;}
+		}
+}
+
+
