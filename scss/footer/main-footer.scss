@@ -1,21 +1,21 @@
 .top-footer {
-	height: 80vh;
+	height: 700px;
 	position: relative;
 	width: 95vw;
 	background:#aaa url('../img/footer/shops.jpg') center/cover no-repeat;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 	box-sizing: border-box;
-	padding: 0 200px;
+	padding: 0 5% 5% 5%;
 	border-bottom: 8px solid #fe7f12;
 	.caption {
 		font-weight: normal;
 		width: 100%;
 		box-sizing: border-box;
-		padding-right: 50%;
+		padding-right: 40%;
 		position: relative;
 		font-size: 4.375rem;
 		line-height: 1.06;
@@ -26,7 +26,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 400px;
+		width: 33%;
 		height: 60%;
 		h3 {
 			padding-bottom: 10px;

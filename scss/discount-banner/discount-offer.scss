@@ -8,6 +8,7 @@
 	span {
 		position: absolute;
 		top: -25px;
+		left: -20px;
 		font-size: 90px;
   		text-align: left;
  		color: #fe7f12;
@@ -18,17 +19,9 @@
 		font-size: 30px;
 		align-self: flex-end;
 		padding-bottom: 10px;
-		padding-left: 0px;
 	}
-
-
-
-
 	.get-promo {
-
 		position: relative;
-		// width: 40%;
-		// border: 1px solid red;
 		input {
 			width: 266px;
   			height: 35px;

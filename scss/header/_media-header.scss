@@ -1,0 +1,12 @@
+@include mq("tablet-small", max) {
+	.header {
+		h1 {
+			font-size: 30px;
+			width: 80%;
+			bottom: 25%;
+		}
+		.callback {
+			margin-top: 20px;
+		}
+	}
+}

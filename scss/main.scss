@@ -8,6 +8,9 @@ p, h1, h2, h3, span {
 html {
 	font-size: 16px;
 }
+button {
+	cursor: pointer;
+}
 
 p {
 	font-family: 'Lato', sans-serif;
@@ -20,8 +23,11 @@ h1,h2,h3,h4 {
 @import "UI/fonts";
 @import "UI/color";
 
+@import "header/header", "header/_media-header";
+@import "features/features", "features/_media-features";
 @import "slider/slider.scss", "slider/_media-slider.scss";
 @import "footer/main-footer", "footer/_media-main-footer";
 @import "footer/bottom-footer";
-@import "discount-banner/discount-banner";
+@import "discount-banner/discount-banner", "discount-banner/_media-discount";
+
 

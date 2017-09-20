@@ -1,0 +1,12 @@
+@include mq("850", max) {
+	.features {
+		height: auto;
+		flex-direction: column;
+
+		.choice,
+		.credit,
+		.delivery {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@include mq("desktop", max) {
+	.discount-banner {
+		height: 300px;
+		width: 100%;
+	}
+	.options,
+	.discount-offer {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.discount-offer {
+		height: 450px;
+		span {
+			top: -50px;
+			left: 5%;
+		}
+		h3 {
+			align-self: flex-start;
+			padding-left: 25px;
+			padding-top: 70px;
+		}
+		.get-promo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 60%;
+			label {
+				text-align: center;
+				width: 90%;
+				margin: 0 auto;
+				padding-bottom: 20px;
+			}
+			button {
+				margin-top: 20px;
+				position: relative;
+				left: auto;
+			}
+		}
+	}
+
+
+	.options {
+		h3 {text-align: center;
+			padding: 50px 10px 10px 0;
+			width: 100%;}
+		p { padding: 0 10px;
+			text-align: center;
+			width: 100%;}
+	}
+}

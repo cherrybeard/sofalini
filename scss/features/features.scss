@@ -1,0 +1,31 @@
+.features {
+	height: 250px;
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	
+	.choice,
+	.credit,
+	.delivery {
+		text-align: center;
+		box-sizing: border-box;
+		padding-top: 150px;
+
+		
+		width: 33%;
+		h3 {
+			font-size: 30px;
+			font-weight: normal;
+			color: #222222;
+		}
+		p {
+			width: 50%;
+			margin: 0 auto;
+			font-size: 16px;
+			line-height: 1.44;
+			color: #909090;
+		}
+	}
+
+
+}
+	
