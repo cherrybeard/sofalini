@@ -1,0 +1,44 @@
+.eco {
+	.eco-promo {
+		$height: 440px;
+		background: $color-gray-bg;
+		width: 430px;
+		border-bottom: 8px solid $color-primary;
+		height: $height;
+		position: relative;
+		box-sizing: border-box;
+		padding: 120px 20px 140px 50px;
+		margin-top: 40px;
+
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+		}
+
+		&::before {
+			width: 90px;
+			height: 110px;
+			background: url(../img/eco.svg) center/contain no-repeat;
+			top: -26px;
+		}
+
+		&::after {
+			border-left: 70px solid $color-gray-bg;
+			border-top: $height/2 solid transparent;
+			border-bottom: $height/2 solid transparent;
+			right: -70px;
+			top: 0;
+		}
+
+		h3 {
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: #666;
+		}
+	}
+}
