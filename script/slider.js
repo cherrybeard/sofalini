@@ -4,8 +4,12 @@ $(function() {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        grabCursor: true,
-        slidesPerView: "auto"
+        paginationClickable: true,
+        effect: 'fade',
+        autoplay: 5000,
+        loop: true
+        // grabCursor: true,
+        // slidesPerView: "auto"
     });
     var swiperTransform = new Swiper ('.transformers', {
         nextButton: '.swiper-button-next',

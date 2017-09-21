@@ -7,9 +7,9 @@
 @import "ui/text-input";
 @import "ui/main";
 
-@import "header/header", "header/_media-header";
+@import "header/header", "header/_media-header", "header/slider-header";
 @import "features/features", "features/_media-features";
-@import "slider/slider.scss", "slider/_media-slider.scss", "slider/transformers", "slider/single" ;
+@import "slider/slider.scss", "slider/_media-slider.scss", "slider/transformers", "slider/single";
 @import "footer/main-footer", "footer/_media-main-footer";
 @import "footer/bottom-footer";
 @import "discount-banner/discount-banner", "discount-banner/_media-discount";

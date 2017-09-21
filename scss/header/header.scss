@@ -8,10 +8,19 @@
 	.header-content {
   	background: #aaa url('../img/footer/shops.jpg') center/cover no-repeat;
 		height: 100%;
-		width: 100%;
+	}
+	.slide-master {
+	background: #aaa url('../img/header/header_01.png') center/cover no-repeat;
+			height: 100%;
+	}
+	.slide-promo {
+		background: #aaa url('../img/header/header_02.png') center/cover no-repeat;
+			height: 100%;
+		
 	}
 
 	.logo {
+		z-index: 99;
 		position: absolute;
 		font-size: 0;
 		background: url(../img/header/logo.svg) left top no-repeat;
@@ -23,6 +32,7 @@
 	}
 
 	.contacts {
+		z-index: 99;
 		position: absolute;
 		right: 65px;
 		top: 25px;
