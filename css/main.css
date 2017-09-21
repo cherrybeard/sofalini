@@ -66,7 +66,8 @@ h1, h2, h3, h4 {
 
 html {
   padding-top: 40px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  min-width: 1200px; }
 
 .header, .features, .top-footer, .bottom-footer {
   padding-left: 40px;
@@ -136,13 +137,6 @@ html {
     left: 5%;
     width: 205px; }
 
-@media screen and (max-width: 639px) {
-  .header h1 {
-    font-size: 30px;
-    width: 80%;
-    bottom: 25%; }
-  .header .callback {
-    margin-top: 20px; } }
 .header:hover .swiper-arrow {
   opacity: 1; }
 .header .swiper-arrow {
@@ -200,14 +194,6 @@ html {
   .features .delivery::before {
     background-image: url(../img/features/delivery.svg); }
 
-@media screen and (max-width: 849px) {
-  .features {
-    height: auto;
-    flex-direction: column; }
-    .features .choice,
-    .features .credit,
-    .features .delivery {
-      width: 100%; } }
 .slider {
   margin-top: 60px;
   margin-bottom: 100px; }
@@ -284,17 +270,6 @@ html {
 .swiper-button-next {
   right: 100px; }
 
-@media screen and (max-width: 1247px) {
-  .swiper-container .caption {
-    left: 20px;
-    top: 20px;
-    font-size: 2em; }
-  .swiper-container .information {
-    left: 10%; }
-    .swiper-container .information:before {
-      display: none; }
-  .swiper-container .swiper-arrow {
-    visibility: hidden; } }
 .transformers .stenford {
   width: 680px; }
 
@@ -426,36 +401,6 @@ html {
     padding-bottom: 5px;
     color: #dfdfdf; }
 
-@media screen and (max-width: 1247px) {
-  .top-footer {
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; }
-    .top-footer .caption {
-      position: relative;
-      top: auto;
-      left: auto;
-      padding: 50px 0;
-      text-align: center;
-      font-size: 2em;
-      width: auto; }
-    .top-footer .address {
-      width: 100%;
-      height: 300px; }
-      .top-footer .address h3 {
-        text-align: center; }
-      .top-footer .address p {
-        font-size: 1em;
-        text-align: center;
-        width: 50%;
-        margin: 0 auto; }
-      .top-footer .address .map {
-        position: relative;
-        bottom: auto;
-        align-items: center;
-        margin: 25px auto 0 auto; } }
 .bottom-footer {
   margin-top: 20px;
   display: flex;
@@ -473,14 +418,6 @@ html {
     background: url(../img/footer/payment.png) center no-repeat;
     background-size: contain; }
 
-@media screen and (max-width: 1247px) {
-  .bottom-footer {
-    width: 100%;
-    height: 50px; }
-    .bottom-footer a {
-      font-weight: bold; }
-    .bottom-footer .payment {
-      width: 100px; } }
 .discount-banner {
   width: 1000px;
   margin: 50px auto;
@@ -576,45 +513,3 @@ html {
     display: inline-block; }
   .discount-offer .get-promo {
     position: relative; }
-
-@media screen and (max-width: 1247px) {
-  .discount-banner {
-    height: 300px;
-    width: 100%; }
-
-  .discount-offer {
-    flex-direction: column;
-    padding: 0; }
-
-  .discount-offer {
-    height: 450px; }
-    .discount-offer span {
-      top: -50px;
-      left: 5%; }
-    .discount-offer h3 {
-      align-self: flex-start;
-      padding-left: 25px;
-      padding-top: 70px; }
-    .discount-offer .get-promo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 60%; }
-      .discount-offer .get-promo label {
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 20px; }
-      .discount-offer .get-promo button {
-        margin-top: 20px;
-        position: relative;
-        left: auto; }
-
-  .options h3 {
-    text-align: center;
-    padding: 50px 10px 10px 0;
-    width: 100%; }
-  .options p {
-    padding: 0 10px;
-    text-align: center;
-    width: 100%; } }
