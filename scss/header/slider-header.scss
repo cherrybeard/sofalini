@@ -1,0 +1,31 @@
+.header {
+	&:hover {
+		.swiper-arrow { opacity: 1;}
+	}
+	.swiper-arrow {
+		transition: 0.5s;
+		opacity: 0;
+		border: none;
+		background-color: transparent;
+		&:before {
+			border-color: white;
+		}
+		&:hover {
+			background-color: transparent;
+		}
+	}
+	.swiper-button-prev { left: 25px; }
+	.swiper-button-next { right: 25px;}
+	.swiper-pagination-bullets {
+		box-sizing: border-box;
+		// width: 200px;
+		text-align: right;
+		padding-right: 50px;
+	}
+	.swiper-pagination-bullet {
+		border-radius: 0;
+	}
+	.swiper-pagination-bullet {
+		background-color: white;
+	}
+}
