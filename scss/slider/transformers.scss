@@ -1,20 +1,12 @@
 .transformers {
-	.stenford {
-		width: 680px;
-	}
+	.hardy_middle { width: 630px; }
+	.stenford { width: 600px; }
+	.city { width: 690px; }
+	.mini_best_big { width: 680px; }
+	.morfei-1 { width: 570px; }
+	.chelsi { width: 700px; }
 }
 
 @include mq("desktop", max) {
-	.transformers {
-		height: 70vh;
-
-		.swiper-slide {
-			height: 500px;
-			font-size: 0.5em;
-			width: 100vw;
-			background-size: 100%;
-			background-position: center;
-		}
-	}
 
 }

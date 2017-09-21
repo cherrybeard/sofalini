@@ -16,6 +16,12 @@
 	@extend %button;
 	border-color: $color-primary;
 	background-color: $color-primary;
+
+	&.success {
+		$color: #7ED321;
+		background-color: $color;
+		border-color: $color;
+	}
 }
 
 %button-secondary {

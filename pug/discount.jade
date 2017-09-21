@@ -1,8 +1,8 @@
 section.discount-banner.discount-offer#discount
 	span -30%
 	h3 до конца сентября 
-	form.get-promo
+	form.get-promo(action="" method="post" data-form)
 		label(for="get-promo") Получите промокод на электронную почту:
 		.text-input
-			input(type="email" id="get-promo" placeholder="E-mail")
-		button Получить промокод
+			input(type="email", id="get-promo", placeholder="E-mail", name="email")
+		button(type="submit") Получить промокод

@@ -10,9 +10,9 @@ section.discount-banner.options#options
 				br
 				| под&nbsp;ваши предпочтения. Это&nbsp;бесплатно!
 			button Подобрать
-		form.options-form
+		form.options-form(action="" method="post" data-form)
 			.text-input
-				textarea(placeholder="Ваши предпочтения")
+				textarea(placeholder="Ваши предпочтения", name="message")
 			.text-input
-				input(type="email", placeholder="E-mail")
-			button Отправить
+				input(type="email", placeholder="E-mail", name="email")
+			button(type="submit") Отправить

@@ -3,10 +3,10 @@ header.header
 	.contacts
 		a(href="tel:+7 990 888 3992") +7 990 888 3992
 		button.callback Обратный звонок
-		form.callback-form
+		form.callback-form(action="" method="post" data-form)
 			.text-input
-				input(type="text", placeholder="Телефон")
-			button Перезвоните мне
+				input(type="text", placeholder="Телефон", name="phone")
+			button(type="submit") Перезвоните мне
 	.swiper-wrapper
 		.swiper-slide
 			.header-content

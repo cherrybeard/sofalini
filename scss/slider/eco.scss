@@ -1,4 +1,15 @@
 .eco {
+	.manolo_01 { width: 555px; }
+	.milly { width: 500px; }
+	.conti { width: 500px; }
+	.torino { width: 500px; }
+	.morfei-2 { width: 430px; }
+	.manolo_02 { width: 750px; }
+
+	.promo {
+		width: 460px;
+	}
+
 	.eco-promo {
 		@extend %promo;
 		$height: 440px;

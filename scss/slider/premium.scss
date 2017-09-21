@@ -1,4 +1,15 @@
 .premium {
+	.mini_best_big { width: 955px; }
+	.royal { width: 555px; }
+	.best { width: 900px; }
+	.jeneva { width: 740px; }
+	.lozanna { width: 650px; }
+	.hardy_red { width: 940px; }
+
+	.promo {
+		width: 400px;
+	}
+
 	.premium-promo {
 		@extend %promo;
 		$color: #D19D53;

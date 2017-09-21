@@ -4,10 +4,19 @@
 	border-radius: 4px;
 	padding: 4px 10px;
 
+	&.error {
+		border-color: #ee0000;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.2;
+	}
+
 	input[type=email],
 	input[type=text],
 	textarea {
-		color: #aaa;
+		color: #222;
 		font-size: 16px;
 		border: none;
 		line-height: 26px;

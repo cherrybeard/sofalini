@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Rubik:400,700&subset=cyrillic");
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
   margin: 0;
@@ -43,6 +42,9 @@ h1, h2, h3, h4 {
 .header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button {
   border-color: #FE7F12;
   background-color: #FE7F12; }
+  .header .contacts .callback-form button.success, .header .success.pickup, .options button.success, .discount-offer button.success {
+    background-color: #7ED321;
+    border-color: #7ED321; }
 
 .header .contacts .callback, .top-footer .show-map {
   border-color: white;
@@ -53,10 +55,15 @@ h1, h2, h3, h4 {
   border: solid 2px #aaa;
   border-radius: 4px;
   padding: 4px 10px; }
+  .text-input.error {
+    border-color: #ee0000; }
+  .text-input.disabled {
+    pointer-events: none;
+    opacity: 0.2; }
   .text-input input[type=email],
   .text-input input[type=text],
   .text-input textarea {
-    color: #aaa;
+    color: #222;
     font-size: 16px;
     border: none;
     line-height: 26px;
@@ -211,19 +218,23 @@ html {
     outline: 0;
     position: relative;
     cursor: default;
-    padding-left: 40px; }
+    margin-right: 200px; }
+    .slider .swiper-slide:first-child {
+      margin-left: 40px; }
     .slider .swiper-slide:not(.promo) {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end; }
     .slider .swiper-slide img {
-      width: 100%; }
+      max-width: 100%;
+      flex-shrink: 0;
+      flex-grow: 0; }
   .slider .information {
     line-height: 1.28;
     width: 300px;
     position: relative;
-    padding-top: 60px; }
+    padding-top: 40px; }
     .slider .information:before {
       content: "";
       position: absolute;
@@ -270,36 +281,51 @@ html {
 .swiper-button-next {
   right: 100px; }
 
+.transformers .hardy_middle {
+  width: 630px; }
 .transformers .stenford {
+  width: 600px; }
+.transformers .city {
+  width: 690px; }
+.transformers .mini_best_big {
   width: 680px; }
+.transformers .morfei-1 {
+  width: 570px; }
+.transformers .chelsi {
+  width: 700px; }
 
-@media screen and (max-width: 1247px) {
-  .transformers {
-    height: 70vh; }
-    .transformers .swiper-slide {
-      height: 500px;
-      font-size: 0.5em;
-      width: 100vw;
-      background-size: 100%;
-      background-position: center; } }
-.single {
-  margin-top: 50px;
-  /* не кул, надо убрать */ }
-  .single .swiper-slide {
-    width: 400px;
-    background: #fff url("../img/single/single01.png") 30% center/60% no-repeat; }
+.single .barcelona {
+  width: 210px; }
+.single .mini_best-2 {
+  width: 240px; }
+.single .keddi {
+  width: 200px; }
+.single .uyout {
+  width: 255px; }
+.single .klaus-7 {
+  width: 250px; }
+.single .mini_best_01 {
+  width: 250px; }
+.single .mini_best_02 {
+  width: 210px; }
+.single .information {
+  width: 240px;
+  transform: translateX(80px); }
 
-@media screen and (max-width: 1247px) {
-  .single {
-    height: 70vh; }
-    .single .caption {
-      font-size: 2em; }
-    .single .swiper-slide {
-      height: 200px;
-      font-size: 0.5em;
-      width: 300px;
-      background-size: 60%;
-      background-position: center 10%; } }
+.eco .manolo_01 {
+  width: 555px; }
+.eco .milly {
+  width: 500px; }
+.eco .conti {
+  width: 500px; }
+.eco .torino {
+  width: 500px; }
+.eco .morfei-2 {
+  width: 430px; }
+.eco .manolo_02 {
+  width: 750px; }
+.eco .promo {
+  width: 460px; }
 .eco .eco-promo {
   background: #EEE;
   width: 430px;
@@ -325,6 +351,20 @@ html {
     right: -70px;
     top: 0; }
 
+.premium .mini_best_big {
+  width: 955px; }
+.premium .royal {
+  width: 555px; }
+.premium .best {
+  width: 900px; }
+.premium .jeneva {
+  width: 740px; }
+.premium .lozanna {
+  width: 650px; }
+.premium .hardy_red {
+  width: 940px; }
+.premium .promo {
+  width: 400px; }
 .premium .premium-promo {
   height: 420px;
   width: 400px;
