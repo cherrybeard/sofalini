@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Rubik:400,700&subset=cyrillic");
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
   margin: 0;
@@ -58,7 +59,8 @@ html {
   overflow: hidden; }
   .header .header-content {
     background: #aaa url("../img/footer/shops.jpg") center/cover no-repeat;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .header .logo {
     position: absolute;
     font-size: 0;
@@ -139,32 +141,6 @@ html {
     .features .credit,
     .features .delivery {
       width: 100%; } }
-.transformers .swiper-slide {
-  background: #fff left/70% no-repeat; }
-.transformers .first {
-  background-image: url("../img/transformers/transformer01.png"); }
-.transformers .second {
-  background-image: url("../img/transformers/transformer01.png"); }
-.transformers .third {
-  background-image: url("../img/transformers/transformer01.png"); }
-.transformers .information:before {
-  content: "";
-  position: absolute;
-  height: 20vh;
-  width: 1px;
-  background-color: #888888;
-  bottom: 10px;
-  left: -50px; }
-
-@media screen and (max-width: 1247px) {
-  .transformers {
-    height: 70vh; }
-    .transformers .swiper-slide {
-      height: 500px;
-      font-size: 0.5em;
-      width: 100vw;
-      background-size: 100%;
-      background-position: center; } }
 .swiper-container {
   position: relative;
   height: 500px;
@@ -173,17 +149,10 @@ html {
     z-index: 99;
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 0px;
     font-size: 60px;
     text-align: left;
     color: #222222; }
-  .swiper-container .swiper-wrapper {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    background-color: #fff;
-    height: 100%;
-    width: 100%; }
   .swiper-container .swiper-slide {
     outline: 0;
     position: relative;
@@ -248,21 +217,6 @@ html {
 .swiper-button-next {
   right: 100px; }
 
-.single .slick-slide {
-  width: 500px;
-  background: #fff url("../img/single/single01.png") top/60% no-repeat; }
-
-@media screen and (max-width: 1247px) {
-  .single {
-    height: 70vh; }
-    .single .caption {
-      font-size: 2em; }
-    .single .slick-slide {
-      height: 60vh;
-      font-size: 0.5em;
-      width: 100vw;
-      background-size: 60%;
-      background-position: center 10%; } }
 @media screen and (max-width: 1247px) {
   .swiper-container .caption {
     left: 20px;
@@ -274,6 +228,50 @@ html {
       display: none; }
   .swiper-container .swiper-arrow {
     visibility: hidden; } }
+.transformers .swiper-slide {
+  background: #fff 10% center/70% no-repeat; }
+.transformers .first {
+  background-image: url("../img/transformers/transformer01.png"); }
+.transformers .second {
+  background-image: url("../img/transformers/transformer01.png"); }
+.transformers .third {
+  background-image: url("../img/transformers/transformer01.png"); }
+.transformers .information:before {
+  content: "";
+  position: absolute;
+  height: 20vh;
+  width: 1px;
+  background-color: #888888;
+  bottom: 10px;
+  left: -50px; }
+
+@media screen and (max-width: 1247px) {
+  .transformers {
+    height: 70vh; }
+    .transformers .swiper-slide {
+      height: 500px;
+      font-size: 0.5em;
+      width: 100vw;
+      background-size: 100%;
+      background-position: center; } }
+.single {
+  margin-top: 50px;
+  /* не кул, надо убрать */ }
+  .single .swiper-slide {
+    width: 400px;
+    background: #fff url("../img/single/single01.png") 30% center/60% no-repeat; }
+
+@media screen and (max-width: 1247px) {
+  .single {
+    height: 70vh; }
+    .single .caption {
+      font-size: 2em; }
+    .single .swiper-slide {
+      height: 200px;
+      font-size: 0.5em;
+      width: 300px;
+      background-size: 60%;
+      background-position: center 10%; } }
 .top-footer .top-footer-content {
   width: 100%;
   height: 700px;

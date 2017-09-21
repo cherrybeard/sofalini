@@ -1,19 +1,25 @@
 
 $(function() {
-
- var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    // direction: '',
-    // loop: true,
-    
-    // If we need pagination
-    
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    grabCursor: true,
-    slidesPerView: 'auto'
-	});   
+    var swiperHeader = new Swiper ('.header', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        grabCursor: true,
+        slidesPerView: "auto"
+    });
+    var swiperTransform = new Swiper ('.transformers', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        grabCursor: true,
+        slidesPerView: "auto"
+    });   
+    var swiperSingle = new Swiper ('.single', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        grabCursor: true,
+        slidesPerView: "auto"
+    }); 
+      
 });
 
 

@@ -1,17 +1,18 @@
 .single {
-	.slick-slide {
-		width: 500px;
-		background:#fff url('../img/single/single01.png') top/60% no-repeat; }
+	margin-top: 50px; /* не кул, надо убрать */
+	.swiper-slide {
+		width: 400px;
+		background:#fff url('../img/single/single01.png') 30% center/60% no-repeat; }
 }
 
 @include mq("desktop", max) {
 	.single {
 		height: 70vh;
 		.caption { font-size: 2em;}
-		.slick-slide {
-			height: 60vh;
+		.swiper-slide {
+			height: 200px;
 			font-size: 0.5em;
-			width: 100vw;
+			width: 300px;
 			background-size: 60%;
 			background-position: center 10%;}
 	}	
