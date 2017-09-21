@@ -6,10 +6,12 @@
 @import "ui/buttons";
 @import "ui/text-input";
 @import "ui/main";
+@import "ui/promo";
 
 @import "header/header", "header/_media-header";
 @import "features/features", "features/_media-features";
-@import "slider/slider.scss", "slider/_media-slider.scss", "slider/transformers", "slider/single", "slider/eco";
+@import "slider/slider.scss", "slider/_media-slider.scss",
+"slider/transformers", "slider/single", "slider/eco", "slider/premium";
 @import "footer/main-footer", "footer/_media-main-footer";
 @import "footer/bottom-footer";
 @import "discount-banner/discount-banner", "discount-banner/_media-discount";
