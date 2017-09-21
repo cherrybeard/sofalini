@@ -1,0 +1,47 @@
+.premium {
+	.premium-promo {
+		@extend %promo;
+		$color: #D19D53;
+		height: 420px;
+		width: 400px;
+		box-sizing: border-box;
+		border: 2px solid $color;
+		outline: 4px solid $color;
+		outline-offset: 4px;
+		margin-top: 60px;
+		padding: 80px 70px 0 50px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 101px;
+			height: 92px;
+			background: url(../img/premium.svg) center/contain no-repeat;
+			top: -52px;
+			left: 30px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin-bottom: 16px;
+			position: relative;
+			padding-left: 28px;
+
+			&::before {
+				$size: 7px;
+				content: '';
+				position: absolute;
+				left: 8px;
+				top: 9px;
+				width: $size;
+				height: $size;
+				background: $color;
+				transform: rotate(45deg) translateY(-2px);
+				margin-right: 12px;
+			}
+		}
+	}
+}
