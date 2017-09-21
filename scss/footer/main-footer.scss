@@ -1,26 +1,37 @@
 .top-footer {
-	height: 700px;
-	position: relative;
-	width: 95vw;
-	background:#aaa url('../img/footer/shops.jpg') center/cover no-repeat;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: flex-end;
-	box-sizing: border-box;
-	padding: 0 5% 5% 5%;
-	border-bottom: 8px solid #fe7f12;
-	.caption {
-		font-weight: normal;
+	@extend %section-content;
+
+	.top-footer-content {
 		width: 100%;
+		height: 700px;
+		border-bottom: 8px solid #fe7f12;
+		background: #aaa url('../img/footer/shops.jpg') center/cover no-repeat;
+		box-sizing: border-box;
+		padding: 60px 48px
+	}
+
+	.address-list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 140px;
+	}
+
+	.caption {
 		box-sizing: border-box;
 		padding-right: 40%;
-		position: relative;
 		font-size: 4.375rem;
 		line-height: 1.06;
-  		text-align: left;
-  		color: white;}
+		text-align: left;
+		color: white;
+	}
+
+	.show-map {
+		@extend %button-secondary;
+		bottom: 10%;
+		width: 230px;
+		margin-top: 30px;
+	}
+
 	.address {
 		position: relative;
 		display: flex;
@@ -28,34 +39,20 @@
 		justify-content: center;
 		width: 33%;
 		height: 60%;
+
 		h3 {
 			padding-bottom: 10px;
 			font-size: 32px;
 			text-align: left;
 			color: #ffffff;
 		}
+
 		p {
-			font-size: 1.3em;
+			font-size: 16px;
 			width: 300px;
-  			text-align: left;
-  			padding-bottom: 5px;
-  			color: #dfdfdf;}
-
-  		.map {
-  			bottom: 10%;
-  			position: absolute;
-  			width: 275px;
-  			height: 42px;
-  			border-radius: 100px;
-  			background-color: transparent;
-  			border: 1px solid white;
-			
-			font-size: 14px;
-			font-weight: 500;
-			letter-spacing: 2.8px;
-			text-align: center;
-			color: #ffffff;
-			text-transform: uppercase;}
-  		}
-
+			text-align: left;
+			padding-bottom: 5px;
+			color: #dfdfdf;
+		}
+	}
 }

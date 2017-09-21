@@ -1,17 +1,29 @@
 .header {
+	@extend %section-content;
 	position: relative;
 	height: 80vh;
-	padding: 40px;
+	overflow: hidden;
 
 	.header-content {
   	background: #aaa url('../img/footer/shops.jpg') center/cover no-repeat;
 		height: 100%;
 	}
 
+	.logo {
+		position: absolute;
+		font-size: 0;
+		background: url(../img/header/logo.svg) left top no-repeat;
+		background-size: contain;
+		height: 30px;
+		width: 1700px;
+		top: 48px;
+		left: 88px;
+	}
+
 	.contacts {
-		text-align: right;
-		padding-top: 25px;
-		padding-right: 25px;
+		position: absolute;
+		right: 65px;
+		top: 25px;
 	}
 
 	a {
@@ -21,44 +33,24 @@
 	}
 
 	.callback {
-		background-color: transparent;
-		width: 206px;
-		height: 39px;
-		border-radius: 8px;
-		border: solid 1.1px #ffffff;
-
-		font-size: 12px;
-		font-weight: bold;
-		letter-spacing: 1.1px;
-		text-align: center;
-		color: #ffffff;
-		text-transform: uppercase;
-
-		}
+		@extend %button-secondary;
+		width: 200px;
+	}
 
 	h1 {
-		text-align: left;
-		color: #ffffff;
+		color: white;
 		font-size: 50px;
 		position: absolute;
 		left: 5%;
 		bottom: 20%;
 		width: 60%;
-		font-weight: normal;}
+	}
+
 	.pickup {
+		@extend %button-primary;
 		position: absolute;
 		bottom: 10%;
 		left: 5%;
 		width: 205px;
-		height: 39px;
-		border-radius: 8px;
-		border: none;
-		background-color: #fe7f12;
-		font-family: 'Rubik', sans-serif;
-		font-size: 12px;
-		font-weight: bold;
-		letter-spacing: 1px;
-		text-align: center;
-		color: #ffffff;
-		text-transform: uppercase;}
+	}
 }

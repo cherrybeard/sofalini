@@ -1,20 +1,17 @@
-// basic style
-
-
-
 .main-slider {
 	position: relative;
 	height: 700px;
 	background-color: #fff;
 
 	.caption {
-	z-index: 99;
-	position: absolute;
-	left: 50px;
-	top: 50px;
-	font-size: 70px;
- 	text-align: left;
-  	color: #222222;}
+		z-index: 99;
+		position: absolute;
+		left: 50px;
+		top: 50px;
+		font-size: 60px;
+	 	text-align: left;
+  	color: #222222;
+	}
 
 	.slider {
 		display: flex;
@@ -22,7 +19,8 @@
 		position: relative;
 		background-color: #fff;
 		height: 100%;
-		width: 100%;}
+		width: 100%;
+	}
 
 	.slick-slide {
 		outline:0;
@@ -30,7 +28,8 @@
 		width: 60vw;
 		height: 500px;
 		margin: 0 10px;
-		cursor: pointer;}
+		cursor: pointer;
+	}
 
 	.information {
 		position: absolute;
@@ -39,19 +38,25 @@
 		line-height: 1.28;
 		text-align: left;
 		color: #666666;
+
 		h3 {
 			padding-bottom: 5px;
 			letter-spacing: 3.2px;
-	  		text-transform: uppercase;}
+  		text-transform: uppercase;
+		}
+
 		.about {
 			height: 50px;
 			width: 300px;
-			font-size: 17px;}
+			font-size: 17px;
+		}
+
 		.cost {
 			font-size: 35px;
-	  		color: #000000;
-	  		font-weight: bold;}
-}
+  		color: #000000;
+  		font-weight: bold;
+		}
+	}
 }
 
 .slick-arrow {

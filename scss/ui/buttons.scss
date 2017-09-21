@@ -1,0 +1,24 @@
+%button {
+	border-radius: 8px;
+	color: white;
+	font-family: $font-rubik;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	border: 1px solid transparent;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+%button-primary {
+	@extend %button;
+	border-color: $color-primary;
+	background-color: $color-primary;
+}
+
+%button-secondary {
+	@extend %button;
+	border-color: white;
+	background-color: transparent;
+}

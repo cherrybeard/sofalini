@@ -1,29 +1,10 @@
-div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
-	margin: 0;
-	padding: 0;
-}
-p, h1, h2, h3, span {
-	cursor: default;
-}
-html {
-	font-size: 16px;
-	font-family: 'Lato', sans-serif;
-}
-button {
-	cursor: pointer;
-}
-
-p {
-	font-family: 'Lato', sans-serif;
-}
-
-h1,h2,h3,h4 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 400;
-}
+@import "reset.scss";
 @import "mixins.scss";
-@import "UI/fonts";
-@import "UI/color";
+
+@import "ui/fonts";
+@import "ui/color";
+@import "ui/buttons";
+@import "ui/main";
 
 @import "header/header", "header/_media-header";
 @import "features/features", "features/_media-features";
