@@ -1,7 +1,18 @@
 section.discount-banner.options
-	span ?
-	h3 Затрудняетесь в&nbsp;выборе?
-	p Поможем вам подобрать диван
-		br
-		| под&nbsp;ваши предпочтения. Это&nbsp;бесплатно!
-	button Подобрать
+	.options-left
+		span ?
+		h3 Затрудняетесь в&nbsp;выборе?
+		p.options-describe Опишите диван, который вы хотите и наши специалисту подберут вам наиболее подходящий вариант.
+		
+	.options-right
+		.options-invite
+			p Поможем вам подобрать диван
+				br
+				| под&nbsp;ваши предпочтения. Это&nbsp;бесплатно!
+			button Подобрать
+		form.options-form
+			.text-input
+				textarea(placeholder="Ваши предпочтения")
+			.text-input
+				input(type="email", placeholder="E-mail")
+			button Отправить

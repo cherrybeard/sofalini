@@ -1,0 +1,20 @@
+.text-input {
+	background: white;
+	border: solid 2px #aaa;
+	border-radius: 4px;
+	padding: 4px 10px;
+
+	input[type=email],
+	input[type=text],
+	textarea {
+		color: #aaa;
+		font-size: 16px;
+		border: none;
+		line-height: 26px;
+		width: 100%;
+	}
+
+	textarea {
+    resize: none;
+	}
+}

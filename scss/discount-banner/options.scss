@@ -3,7 +3,22 @@
 	align-items: center;
 	justify-content: space-around;
 	box-sizing: border-box;
-	padding: 0 50px;
+	padding: 20px 50px;
+
+	&:not(.options-opened) {
+		height: 110px;
+
+		.options-describe,
+		.options-form {
+			display: none;
+		}
+	}
+
+	&.options-opened {
+		.options-invite {
+			display: none;
+		}
+	}
 
 	span {
 		position: absolute;
@@ -21,17 +36,12 @@
 		width: 40%;
 		text-align: left;
 		box-sizing: border-box;
-		padding: 0 10px 0 50px;
 		font-family: inherit;
   		font-size: 30px;
 	}
 
 	p {
-		font-family: inherit;
-		text-align: right;
-		color: #666666;
-		box-sizing: border-box;
-		margin-right: 20px;
+		color: #666;
 	}
 
 	button {
@@ -39,4 +49,33 @@
 		width: 205px;
 	}
 
+	.text-input {
+		margin-bottom: 8px;
+	}
+
+	.options-left {
+		padding-left: 50px;
+	}
+
+	.options-right {
+		width: 480px;
+		margin-left: 90px;
+		flex-shrink: 0;
+	}
+
+	.options-invite {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			text-align: right;
+			margin-right: 20px;
+			flex-shrink: 0;
+		}
+	}
+
+	.options-describe {
+		margin-top: 20px;
+	}
 }

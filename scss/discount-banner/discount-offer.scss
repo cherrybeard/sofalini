@@ -5,6 +5,7 @@
 	position: relative;
 	box-sizing: border-box;
 	padding: 0 50px;
+	height: 110px;
 
 	span {
 		position: absolute;
@@ -24,33 +25,27 @@
 		padding-bottom: 10px;
 	}
 
+	button {
+		@extend %button-primary;
+		width: 205px;
+		vertical-align: bottom;
+	}
+
+	label {
+		display: block;
+		font-size: 16px;
+		text-align: left;
+		color: #666;
+		margin-bottom: 12px;
+	}
+
+	.text-input {
+		width: 240px;
+		vertical-align: bottom;
+		display: inline-block;
+	}
+
 	.get-promo {
 		position: relative;
-
-		input {
-			width: 260px;
-			height: 34px;
-			border: solid 2px #ababab;
-			border-radius: 4px;
-			font-size: 16px;
-			outline: none;
-			padding-left: 10px;
-			color: #aaa;
-			vertical-align: bottom;
-		}
-
-		button {
-			@extend %button-primary;
-			width: 205px;
-			vertical-align: bottom;
-		}
-
-		label {
-			display: block;
-			font-size: 16px;
-			text-align: left;
-			color: #666;
-			margin-bottom: 12px;
-		}
 	}
 }
