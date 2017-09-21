@@ -98,6 +98,7 @@ html {
     bottom: 25%; }
   .header .callback {
     margin-top: 20px; } }
+
 .features {
   display: flex;
   justify-content: space-between;
@@ -134,11 +135,16 @@ html {
 @media screen and (max-width: 849px) {
   .features {
     height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
     .features .choice,
     .features .credit,
     .features .delivery {
       width: 100%; } }
+
 .main-slider {
   position: relative;
   height: 700px;
@@ -152,7 +158,13 @@ html {
     text-align: left;
     color: #222222; }
   .main-slider .slider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     position: relative;
     background-color: #fff;
@@ -207,6 +219,8 @@ html {
     top: 2px;
     width: 10px;
     height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     border: 6px solid black;
     border-top: transparent;
@@ -214,6 +228,8 @@ html {
 
 .slick-prev {
   left: 100px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .slick-next {
@@ -225,12 +241,16 @@ html {
 
 .transformers .slick-slide {
   background: #fff center/70% no-repeat; }
+
 .transformers .first {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .second {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .third {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .information:before {
   content: "";
   position: absolute;
@@ -249,6 +269,7 @@ html {
       width: 100vw;
       background-size: 100%;
       background-position: center; } }
+
 .single .slick-slide {
   width: 500px;
   background: #fff url("../img/single/single01.png") top/60% no-repeat; }
@@ -264,6 +285,7 @@ html {
       width: 100vw;
       background-size: 60%;
       background-position: center 10%; } }
+
 @media screen and (max-width: 1247px) {
   .main-slider .caption {
     left: 20px;
@@ -320,7 +342,14 @@ html {
   .top-footer {
     height: auto;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0; }
     .top-footer .caption {
@@ -344,8 +373,12 @@ html {
       .top-footer .address .map {
         position: relative;
         bottom: auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
         margin: 25px auto 0 auto; } }
+
 .bottom-footer {
   margin-top: 20px;
   display: flex;
@@ -379,9 +412,18 @@ html {
   position: relative; }
 
 .options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 50px; }
   .options span {
@@ -397,6 +439,7 @@ html {
     font-weight: normal;
     width: 40%;
     text-align: left;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10px 0 50px;
     font-family: inherit;
@@ -405,16 +448,27 @@ html {
     font-family: inherit;
     text-align: right;
     color: #666666;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 20px; }
   .options button {
     width: 205px; }
 
 .discount-offer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 50px; }
   .discount-offer span {
@@ -429,6 +483,8 @@ html {
     font-weight: normal;
     text-align: left;
     font-size: 30px;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     padding-bottom: 10px; }
   .discount-offer .get-promo {
@@ -457,23 +513,37 @@ html {
   .discount-banner {
     height: 300px;
     width: 100%; }
-
   .discount-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0; }
-
   .discount-offer {
     height: 450px; }
     .discount-offer span {
       top: -50px;
       left: 5%; }
     .discount-offer h3 {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       padding-left: 25px;
       padding-top: 70px; }
     .discount-offer .get-promo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       height: 60%; }
       .discount-offer .get-promo label {
@@ -485,7 +555,6 @@ html {
         margin-top: 20px;
         position: relative;
         left: auto; }
-
   .options h3 {
     text-align: center;
     padding: 50px 10px 10px 0;
