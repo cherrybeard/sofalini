@@ -4,15 +4,18 @@
 	align-items: center;
 	position: relative;
 	box-sizing: border-box;
-	padding: 0 100px 0 50px;
+	padding: 0 50px;
+
 	span {
 		position: absolute;
 		top: -25px;
 		left: -20px;
+		font-family: $font-rubik;
 		font-size: 90px;
-  		text-align: left;
+		text-align: left;
  		color: #fe7f12;
 	}
+
 	h3 {
 		font-weight: normal;
 		text-align: left;
@@ -20,41 +23,34 @@
 		align-self: flex-end;
 		padding-bottom: 10px;
 	}
+
 	.get-promo {
 		position: relative;
+
 		input {
-			width: 266px;
-  			height: 35px;
+			width: 260px;
+			height: 34px;
 			border: solid 2px #ababab;
 			border-radius: 4px;
-			font-size: 18px;
+			font-size: 16px;
 			outline: none;
-			font-family: 'Lato', sans-serif;
 			padding-left: 10px;
-			color: #aaaaaa;}
+			color: #aaa;
+			vertical-align: bottom;
+		}
+
 		button {
-			position: absolute;
-			left: 200px;
+			@extend %button-primary;
 			width: 205px;
-  			height: 39px;
-			border-radius: 8px;
-			border: none;
-			background-color: #fe7f12;
-			font-family: 'Rubik', sans-serif;
-			font-size: 12px;
-			font-weight: bold;
-			letter-spacing: 1px;
-			text-align: center;
-			color: #ffffff;
-			text-transform: uppercase;}
+			vertical-align: bottom;
+		}
+
 		label {
 			display: block;
-			font-family: 'Lato', sans-serif;
-			font-size: 18px;
+			font-size: 16px;
 			text-align: left;
-			color: #666666;
-			padding-bottom: 5px;}
+			color: #666;
+			margin-bottom: 12px;
 		}
+	}
 }
-
-
