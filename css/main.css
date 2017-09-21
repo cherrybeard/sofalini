@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
   font-weight: 400; }
 
 @font-face {}
-.header .pickup, .options button, .discount-offer button, .header .callback, .top-footer .show-map {
+.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button, .header .contacts .callback, .top-footer .show-map {
   border-radius: 8px;
   color: white;
   font-family: "Rubik", sans-serif;
@@ -39,11 +39,11 @@ h1, h2, h3, h4 {
   text-align: center;
   text-transform: uppercase; }
 
-.header .pickup, .options button, .discount-offer button {
+.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button {
   border-color: #FE7F12;
   background-color: #FE7F12; }
 
-.header .callback, .top-footer .show-map {
+.header .contacts .callback, .top-footer .show-map {
   border-color: white;
   background-color: transparent; }
 
@@ -104,13 +104,24 @@ html {
     z-index: 99;
     position: absolute;
     right: 65px;
-    top: 25px; }
-  .header a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px; }
-  .header .callback {
-    width: 200px; }
+    top: 25px;
+    display: flex; }
+    .header .contacts:not(.contacts-opened) .callback-form {
+      display: none; }
+    .header .contacts.contacts-opened .callback {
+      display: none; }
+    .header .contacts a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px; }
+    .header .contacts .callback {
+      width: 190px; }
+    .header .contacts .callback-form button,
+    .header .contacts .callback-form .text-input {
+      display: inline-block;
+      vertical-align: bottom; }
+    .header .contacts .callback-form button {
+      width: 190px; }
   .header h1 {
     color: white;
     font-size: 50px;
