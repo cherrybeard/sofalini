@@ -1,63 +1,72 @@
+.slider {
+	margin-top: 60px;
+	margin-bottom: 100px;
 
-
-
-.swiper-container {
-	position: relative;
-	height: 500px;
-	background-color: #fff;
-
-	.caption {
-		z-index: 99;
-		position: absolute;
-		left: 50px;
-		top: 0px;
-		font-size: 60px;
-	 	text-align: left;
-  		color: #222222;
+	.swiper-container {
+		position: relative;
+		height: 500px;
+		background-color: #fff;
 	}
 
-	// .swiper-wrapper {
-		// display: flex;
-		// align-items: flex-end;
-	// 	position: relative;
-	// 	background-color: #fff;
-	// 	height: 100%;
-	// 	width: 100%;
-	// }
+	.caption {
+		font-size: 60px;
+	 	text-align: left;
+		color: #222;
+		margin-left: 88px;
+		margin-bottom: 40px;
+	}
 
 	.swiper-slide {
-		outline:0;
+		outline: 0;
 		position: relative;
-		width: 80%;
-		height: 500px;
-		margin: 0 10px;
-		cursor: pointer;
+		cursor: default;
+		padding-left: 40px;
+
+		&:not(.promo) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.information {
-		position: absolute;
-		left: 10%;
-		bottom: 5%;
 		line-height: 1.28;
-		text-align: left;
-		color: #666666;
+		width: 300px;
+		position: relative;
+		padding-top: 60px;
 
-		h3 {
-			padding-bottom: 5px;
-			letter-spacing: 3.2px;
-  			text-transform: uppercase;
+		&:before {
+			content: "";
+			position: absolute;
+			height: 200px;
+			width: 1px;
+			background-color: #888888;;
+			bottom: 10px;
+			left: -20px;
 		}
 
-		.about {
-			height: 50px;
-			width: 300px;
-			font-size: 17px;
+		h3, .about {
+			color: #666;
+			font-size: 16px;
+		}
+
+		h3 {
+			font-family: $font-lato;
+			padding-bottom: 10px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
 		}
 
 		.cost {
-			font-size: 35px;
-  			color: #000000;
-  			font-weight: bold;
+			font-size: 30px;
+			font-family: $font-rubik;
+			color: black;
+			margin-top: 12px;
 		}
 	}
 }
@@ -73,9 +82,11 @@
 	border-radius: 50%;
 	border: solid 1px #dddddd;
 	background-image: none;
+
 	&:hover {
 		background-color: #dddddd;
 	}
+
 	&:before {
 		display: inline-block;
 		content: "";
@@ -99,8 +110,8 @@
 .swiper-button-prev {
 	left: 100px;
 	transform: rotate(180deg);
-	
 }
 
-.swiper-button-next { right: 100px; }
-
+.swiper-button-next {
+	right: 100px;
+}

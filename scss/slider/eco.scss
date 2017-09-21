@@ -1,5 +1,4 @@
 .eco {
-
 	.eco-promo {
 		@extend %promo;
 		$height: 440px;
@@ -23,6 +22,7 @@
 			height: 110px;
 			background: url(../img/eco.svg) center/contain no-repeat;
 			top: -26px;
+			left: 50px;
 		}
 
 		&::after {
