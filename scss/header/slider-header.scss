@@ -6,16 +6,21 @@
 		transition: 0.5s;
 		opacity: 0;
 		border: none;
-		background-color: transparent;
+		background: transparent url(../img/header/arrow-next.svg) center/32% no-repeat;
+
 		&:before {
-			border-color: white;
+			content: none;
 		}
 		&:hover {
 			background-color: transparent;
 		}
 	}
-	.swiper-button-prev { left: 25px; }
-	.swiper-button-next { right: 25px;}
+	.swiper-button-prev {
+		left: 40px;
+	}
+	.swiper-button-next {
+		right: 40px;
+	}
 	.swiper-pagination-bullets {
 		box-sizing: border-box;
 		// width: 200px;

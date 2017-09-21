@@ -37,7 +37,8 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1em;
   border: 1px solid transparent;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button {
   border-color: #FE7F12;
@@ -148,15 +149,15 @@ html {
   transition: 0.5s;
   opacity: 0;
   border: none;
-  background-color: transparent; }
+  background: transparent url(../img/header/arrow-next.svg) center/32% no-repeat; }
   .header .swiper-arrow:before {
-    border-color: white; }
+    content: none; }
   .header .swiper-arrow:hover {
     background-color: transparent; }
 .header .swiper-button-prev {
-  left: 25px; }
+  left: 40px; }
 .header .swiper-button-next {
-  right: 25px; }
+  right: 40px; }
 .header .swiper-pagination-bullets {
   box-sizing: border-box;
   text-align: right;
@@ -263,27 +264,14 @@ html {
   outline: 0;
   cursor: pointer;
   z-index: 99;
-  background-color: #fff;
   border: none;
   width: 75px;
   height: 75px;
   border-radius: 50%;
   border: solid 1px #dddddd;
-  background-image: none; }
+  background: white url(../img/slider/arrow-next.svg) 55% center/24% no-repeat; }
   .swiper-arrow:hover {
-    background-color: #dddddd; }
-  .swiper-arrow:before {
-    display: inline-block;
-    content: "";
-    position: relative;
-    left: 20px;
-    top: 25px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(-45deg);
-    border: 6px solid black;
-    border-top: transparent;
-    border-left: transparent; }
+    background-color: #ddd; }
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
