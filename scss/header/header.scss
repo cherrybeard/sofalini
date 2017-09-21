@@ -1,12 +1,19 @@
 .header {
 	position: relative;
 	height: 80vh;
-    background:#aaa url('../img/footer/shops.jpg') center/cover no-repeat;
+	padding: 40px;
+
+	.header-content {
+  	background: #aaa url('../img/footer/shops.jpg') center/cover no-repeat;
+		height: 100%;
+	}
+
 	.contacts {
 		text-align: right;
 		padding-top: 25px;
 		padding-right: 25px;
 	}
+
 	a {
 		text-decoration: none;
 		color: #fff;
@@ -28,7 +35,7 @@
 		text-transform: uppercase;
 
 		}
-	
+
 	h1 {
 		text-align: left;
 		color: #ffffff;
