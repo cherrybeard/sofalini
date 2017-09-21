@@ -18,8 +18,7 @@ p {
 h1, h2, h3, h4 {
   font-family: 'Rubik', sans-serif; }
 
-@font-face {}
-.header {
+@font-face {}.header {
   position: relative;
   height: 80vh;
   background: #aaa url("../img/footer/shops.jpg") center/cover no-repeat; }
@@ -76,14 +75,19 @@ h1, h2, h3, h4 {
     bottom: 25%; }
   .header .callback {
     margin-top: 20px; } }
+
 .features {
   height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-family: 'Rubik', sans-serif; }
   .features .choice,
   .features .credit,
   .features .delivery {
     text-align: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 150px;
     width: 33%; }
@@ -105,11 +109,16 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 849px) {
   .features {
     height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
     .features .choice,
     .features .credit,
     .features .delivery {
       width: 100%; } }
+
 .main-slider {
   position: relative;
   height: 700px;
@@ -123,7 +132,13 @@ h1, h2, h3, h4 {
     text-align: left;
     color: #222222; }
   .main-slider .slider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     position: relative;
     background-color: #fff;
@@ -178,6 +193,8 @@ h1, h2, h3, h4 {
     top: 2px;
     width: 10px;
     height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     border: 6px solid black;
     border-top: transparent;
@@ -185,6 +202,8 @@ h1, h2, h3, h4 {
 
 .slick-prev {
   left: 100px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .slick-next {
@@ -196,12 +215,16 @@ h1, h2, h3, h4 {
 
 .transformers .slick-slide {
   background: #fff center/70% no-repeat; }
+
 .transformers .first {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .second {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .third {
   background-image: url("../img/transformers/transformer01.png"); }
+
 .transformers .information:before {
   content: "";
   position: absolute;
@@ -220,6 +243,7 @@ h1, h2, h3, h4 {
       width: 100vw;
       background-size: 100%;
       background-position: center; } }
+
 .single .slick-slide {
   width: 500px;
   background: #fff url("../img/single/single01.png") top/60% no-repeat; }
@@ -235,6 +259,7 @@ h1, h2, h3, h4 {
       width: 100vw;
       background-size: 60%;
       background-position: center 10%; } }
+
 @media screen and (max-width: 1247px) {
   .main-slider .caption {
     left: 20px;
@@ -246,22 +271,35 @@ h1, h2, h3, h4 {
       display: none; }
   .main-slider .slick-arrow {
     visibility: hidden; } }
+
 .top-footer {
   height: 700px;
   position: relative;
   width: 95vw;
   background: #aaa url("../img/footer/shops.jpg") center/cover no-repeat;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 5% 5% 5%;
   border-bottom: 8px solid #fe7f12; }
   .top-footer .caption {
     font-weight: normal;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 40%;
     position: relative;
@@ -271,8 +309,18 @@ h1, h2, h3, h4 {
     color: white; }
   .top-footer .address {
     position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 33%;
     height: 60%; }
@@ -306,7 +354,14 @@ h1, h2, h3, h4 {
   .top-footer {
     height: auto;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0; }
     .top-footer .caption {
@@ -330,18 +385,32 @@ h1, h2, h3, h4 {
       .top-footer .address .map {
         position: relative;
         bottom: auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
         margin: 25px auto 0 auto; } }
+
 .bottom-footer {
   width: 95vw;
   height: 50px;
   margin: 0 auto; }
   .bottom-footer .contacts {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 100px;
     height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
     .bottom-footer .contacts a {
       line-height: 1.25;
@@ -364,6 +433,7 @@ h1, h2, h3, h4 {
         font-weight: bold; }
       .bottom-footer .contacts .payment {
         width: 100px; } }
+
 .discount-banner {
   height: 110px;
   width: 1000px;
@@ -373,9 +443,18 @@ h1, h2, h3, h4 {
   position: relative; }
 
 .options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 50px; }
   .options span {
@@ -390,6 +469,7 @@ h1, h2, h3, h4 {
     font-weight: normal;
     width: 40%;
     text-align: left;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10px 0 50px;
     font-family: inherit;
@@ -399,6 +479,7 @@ h1, h2, h3, h4 {
     font-family: inherit;
     text-align: right;
     color: #666666;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 50px; }
   .options button {
@@ -416,10 +497,20 @@ h1, h2, h3, h4 {
     font-family: inherit; }
 
 .discount-offer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 100px 0 50px; }
   .discount-offer span {
@@ -433,6 +524,8 @@ h1, h2, h3, h4 {
     font-weight: normal;
     text-align: left;
     font-size: 30px;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     padding-bottom: 10px; }
   .discount-offer .get-promo {
@@ -474,24 +567,38 @@ h1, h2, h3, h4 {
   .discount-banner {
     height: 300px;
     width: 100%; }
-
   .options,
   .discount-offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0; }
-
   .discount-offer {
     height: 450px; }
     .discount-offer span {
       top: -50px;
       left: 5%; }
     .discount-offer h3 {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
       align-self: flex-start;
       padding-left: 25px;
       padding-top: 70px; }
     .discount-offer .get-promo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       height: 60%; }
       .discount-offer .get-promo label {
@@ -503,7 +610,6 @@ h1, h2, h3, h4 {
         margin-top: 20px;
         position: relative;
         left: auto; }
-
   .options h3 {
     text-align: center;
     padding: 50px 10px 10px 0;
