@@ -1,5 +1,5 @@
 @include mq("desktop", max) {
-	.main-slider {
+	.swiper-container {
 		.caption { 
 				left: 20px;
 				top: 20px;
@@ -9,6 +9,6 @@
 			left: 10%;
 			&:before { display: none;}
 		}
-		.slick-arrow { visibility: hidden; }
+		.swiper-arrow { visibility: hidden; }
 	}
 }

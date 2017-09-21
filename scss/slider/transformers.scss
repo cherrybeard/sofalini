@@ -1,23 +1,32 @@
-.transformers {
-	.slick-slide {background:#fff center/70% no-repeat;}
-		.first { background-image: url('../img/transformers/transformer01.png'); }
-		.second{ background-image: url('../img/transformers/transformer01.png'); }
-		.third { background-image: url('../img/transformers/transformer01.png'); }
+// .swiper-container {
+// 	height: 50vh;
+// 	border: 1px solid red;
+// }
 
-		.information:before {
-			content: "";
-			position: absolute;
-			height: 15vh;
-			width: 1px;
-			background-color: #888888;;
-			bottom: 10px;
-			left: -50px;}
-	}
+
+
+
+.transformers {
+
+		.swiper-slide {background:#fff left/70% no-repeat;}
+			.first { background-image: url('../img/transformers/transformer01.png'); }
+			.second{ background-image: url('../img/transformers/transformer01.png'); }
+			.third { background-image: url('../img/transformers/transformer01.png'); }
+
+			.information:before {
+				content: "";
+				position: absolute;
+				height: 20vh;
+				width: 1px;
+				background-color: #888888;;
+				bottom: 10px;
+				left: -50px;}
+}
 
 @include mq("desktop", max) {
 	.transformers {
 		height: 70vh;
-		.slick-slide {
+		.swiper-slide {
 			height: 500px;
 			font-size: 0.5em;
 			width: 100vw;

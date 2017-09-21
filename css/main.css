@@ -98,7 +98,6 @@ html {
     bottom: 25%; }
   .header .callback {
     margin-top: 20px; } }
-
 .features {
   display: flex;
   justify-content: space-between;
@@ -135,126 +134,23 @@ html {
 @media screen and (max-width: 849px) {
   .features {
     height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column; }
     .features .choice,
     .features .credit,
     .features .delivery {
       width: 100%; } }
-
-.main-slider {
-  position: relative;
-  height: 700px;
-  background-color: #fff; }
-  .main-slider .caption {
-    z-index: 99;
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    font-size: 60px;
-    text-align: left;
-    color: #222222; }
-  .main-slider .slider {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    position: relative;
-    background-color: #fff;
-    height: 100%;
-    width: 100%; }
-  .main-slider .slick-slide {
-    outline: 0;
-    position: relative;
-    width: 60vw;
-    height: 500px;
-    margin: 0 10px;
-    cursor: pointer; }
-  .main-slider .information {
-    position: absolute;
-    left: 30%;
-    bottom: 10%;
-    line-height: 1.28;
-    text-align: left;
-    color: #666666; }
-    .main-slider .information h3 {
-      padding-bottom: 5px;
-      letter-spacing: 3.2px;
-      text-transform: uppercase; }
-    .main-slider .information .about {
-      height: 50px;
-      width: 300px;
-      font-size: 17px; }
-    .main-slider .information .cost {
-      font-size: 35px;
-      color: #000000;
-      font-weight: bold; }
-
-.slick-arrow {
-  outline: 0;
-  cursor: pointer;
-  z-index: 99;
-  background-color: #fff;
-  border: none;
-  position: absolute;
-  top: 62%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: solid 1px #dddddd; }
-  .slick-arrow:hover {
-    background-color: #dddddd; }
-  .slick-arrow:before {
-    display: inline-block;
-    content: "";
-    position: relative;
-    left: -2px;
-    top: 2px;
-    width: 10px;
-    height: 10px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    border: 6px solid black;
-    border-top: transparent;
-    border-left: transparent; }
-
-.slick-prev {
-  left: 100px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.slick-next {
-  right: 100px; }
-
-.hidden {
-  opacity: 0;
-  pointer-events: none; }
-
-.transformers .slick-slide {
-  background: #fff center/70% no-repeat; }
-
+.transformers .swiper-slide {
+  background: #fff left/70% no-repeat; }
 .transformers .first {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .second {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .third {
   background-image: url("../img/transformers/transformer01.png"); }
-
 .transformers .information:before {
   content: "";
   position: absolute;
-  height: 15vh;
+  height: 20vh;
   width: 1px;
   background-color: #888888;
   bottom: 10px;
@@ -263,12 +159,94 @@ html {
 @media screen and (max-width: 1247px) {
   .transformers {
     height: 70vh; }
-    .transformers .slick-slide {
+    .transformers .swiper-slide {
       height: 500px;
       font-size: 0.5em;
       width: 100vw;
       background-size: 100%;
       background-position: center; } }
+.swiper-container {
+  position: relative;
+  height: 500px;
+  background-color: #fff; }
+  .swiper-container .caption {
+    z-index: 99;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 60px;
+    text-align: left;
+    color: #222222; }
+  .swiper-container .swiper-wrapper {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    width: 100%; }
+  .swiper-container .swiper-slide {
+    outline: 0;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 10px;
+    cursor: pointer; }
+  .swiper-container .information {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    line-height: 1.28;
+    text-align: left;
+    color: #666666; }
+    .swiper-container .information h3 {
+      padding-bottom: 5px;
+      letter-spacing: 3.2px;
+      text-transform: uppercase; }
+    .swiper-container .information .about {
+      height: 50px;
+      width: 300px;
+      font-size: 17px; }
+    .swiper-container .information .cost {
+      font-size: 35px;
+      color: #000000;
+      font-weight: bold; }
+
+.swiper-arrow {
+  outline: 0;
+  cursor: pointer;
+  z-index: 99;
+  background-color: #fff;
+  border: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: solid 1px #dddddd;
+  background-image: none; }
+  .swiper-arrow:hover {
+    background-color: #dddddd; }
+  .swiper-arrow:before {
+    display: inline-block;
+    content: "";
+    position: relative;
+    left: 20px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    border: 6px solid black;
+    border-top: transparent;
+    border-left: transparent; }
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0; }
+
+.swiper-button-prev {
+  left: 100px;
+  transform: rotate(180deg); }
+
+.swiper-button-next {
+  right: 100px; }
 
 .single .slick-slide {
   width: 500px;
@@ -285,17 +263,16 @@ html {
       width: 100vw;
       background-size: 60%;
       background-position: center 10%; } }
-
 @media screen and (max-width: 1247px) {
-  .main-slider .caption {
+  .swiper-container .caption {
     left: 20px;
     top: 20px;
     font-size: 2em; }
-  .main-slider .information {
+  .swiper-container .information {
     left: 10%; }
-    .main-slider .information:before {
+    .swiper-container .information:before {
       display: none; }
-  .main-slider .slick-arrow {
+  .swiper-container .swiper-arrow {
     visibility: hidden; } }
 .top-footer .top-footer-content {
   width: 100%;
@@ -342,14 +319,7 @@ html {
   .top-footer {
     height: auto;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0; }
     .top-footer .caption {
@@ -373,12 +343,8 @@ html {
       .top-footer .address .map {
         position: relative;
         bottom: auto;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
         align-items: center;
         margin: 25px auto 0 auto; } }
-
 .bottom-footer {
   margin-top: 20px;
   display: flex;
@@ -412,18 +378,9 @@ html {
   position: relative; }
 
 .options {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 50px; }
   .options span {
@@ -439,7 +396,6 @@ html {
     font-weight: normal;
     width: 40%;
     text-align: left;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10px 0 50px;
     font-family: inherit;
@@ -448,27 +404,16 @@ html {
     font-family: inherit;
     text-align: right;
     color: #666666;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 20px; }
   .options button {
     width: 205px; }
 
 .discount-offer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 50px; }
   .discount-offer span {
@@ -483,8 +428,6 @@ html {
     font-weight: normal;
     text-align: left;
     font-size: 30px;
-    -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
     align-self: flex-end;
     padding-bottom: 10px; }
   .discount-offer .get-promo {
@@ -513,37 +456,23 @@ html {
   .discount-banner {
     height: 300px;
     width: 100%; }
+
   .discount-offer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0; }
+
   .discount-offer {
     height: 450px; }
     .discount-offer span {
       top: -50px;
       left: 5%; }
     .discount-offer h3 {
-      -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
       align-self: flex-start;
       padding-left: 25px;
       padding-top: 70px; }
     .discount-offer .get-promo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
       align-items: center;
       height: 60%; }
       .discount-offer .get-promo label {
@@ -555,6 +484,7 @@ html {
         margin-top: 20px;
         position: relative;
         left: auto; }
+
   .options h3 {
     text-align: center;
     padding: 50px 10px 10px 0;
