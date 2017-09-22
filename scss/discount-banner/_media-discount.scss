@@ -1,19 +1,15 @@
 @include mq("desktop", max) {
 	.discount-banner {
 		height: 300px;
-		width: 100%;}
+		width: 100%;
+		span { left: 50%; top: -40px; transform: translateX(-50%);}
+	}
 
 	.discount-offer {
 		height: 350px;
 		flex-direction: column;
 		padding: 0;
-		span {
-			top: -50px;
-			left: 5%;}
-		h3 {
-			align-self: flex-start;
-			padding-left: 25px;
-			padding-top: 70px;}
+		h3 { align-self: center; padding-top: 70px;}
 		.get-promo {
 			display: flex;
 			flex-direction: column;
@@ -33,15 +29,19 @@
 
 	.options {
 		flex-direction: column;
+		margin-bottom: 0;
+		padding: 10px;
 		&:not(.options-opened) { height: 350px; }
 		&.options-opened {
 			span {top: -80px;}
 			height: 450px;
-			.options-describe { padding: 0; }			
+			.options-describe { padding: 0; }
 			.text-input { margin-top: 20px; }
 			.options-right{ width: 90%; }
-			button { margin: 20px auto; }
-			
+		}
+		.options-form {
+			button { width: 100%;  margin-top: 12px;}
+			.text-input {margin-top: 10px; margin-bottom: 0;}
 		}
 		.options-left {	padding: 0; }
 		.options-right { margin-left: 0; width: 100%; }

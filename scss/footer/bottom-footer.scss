@@ -22,5 +22,10 @@
 }
 
 @include mq("desktop", max) {
-	.bottom-footer { box-sizing: border-box; padding: 0 10px;}
+	.bottom-footer {
+		box-sizing: border-box;
+		padding: 0 20px;
+		.payment {width: 100px; height: 27px;}
+		a {font-size: 14px;}
+	}
 }

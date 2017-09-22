@@ -1,9 +1,18 @@
+@include mq("tablet-wide", max) {
+	.header {
+		.logo { left: 40px; }
+		.text-input {  width: 165px; }
+	}
+}
+
 @include mq("tablet-small", max) {
 	.header {
 		.swiper-arrow { display: none; }
 		.logo {
 			left: 20px;
 			top: 30px; }
+
+		.text-input { margin-bottom: 10px;}
 		h1 {
 			font-size: 30px;
 			width: 80%;
