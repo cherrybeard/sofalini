@@ -101,13 +101,13 @@ html {
   height: 80vh;
   overflow: hidden; }
   .header .header-content {
-    background: #aaa url("../img/footer/shops.jpg") center/cover no-repeat;
+    background: #aaa url("../img/header/header_03.jpg") center/cover no-repeat;
     height: 100%; }
   .header .slide-master {
-    background: #aaa url("../img/header/header_01.png") center/cover no-repeat;
+    background: #aaa url("../img/header/header_01.jpg") center/cover no-repeat;
     height: 100%; }
   .header .slide-promo {
-    background: #aaa url("../img/header/header_02.png") center/cover no-repeat;
+    background: #aaa url("../img/header/header_02.jpg") center/cover no-repeat;
     height: 100%; }
   .header .logo {
     z-index: 99;
@@ -182,20 +182,22 @@ html {
   .header .swiper-arrow {
     display: none; }
   .header .logo {
-    left: 2%;
-    top: 90px; }
+    left: 20px;
+    top: 30px; }
   .header h1 {
     font-size: 30px;
     width: 80%;
     bottom: 25%; }
   .header .contacts {
-    right: 10px;
-    text-align: right; }
+    top: 90px;
+    left: 20px;
+    align-items: flex-start;
+    flex-direction: column; }
     .header .contacts a {
       width: 150px;
       padding: 12px 20px 12px 0; }
     .header .contacts .callback {
-      width: 150px; } }
+      width: 180px; } }
 @media screen and (max-width: 399px) {
   .header h1 {
     font-size: 20px; } }
@@ -203,7 +205,9 @@ html {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 40px auto 100px; }
+  margin: 40px auto 100px;
+  padding-left: 40px;
+  padding-right: 40px; }
   .features h3 {
     font-size: 30px;
     color: #222222; }
@@ -235,7 +239,12 @@ html {
 @media screen and (max-width: 849px) {
   .features {
     height: auto;
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0 10px; }
+    .features .choice,
+    .features .credit,
+    .features .delivery {
+      margin-bottom: 20px; }
     .features .choice:before,
     .features .credit:before,
     .features .delivery:before {
@@ -276,9 +285,9 @@ html {
       align-items: center;
       justify-content: flex-end; }
     .slider .swiper-slide img {
-      max-width: 100%;
       flex-shrink: 0;
-      flex-grow: 0; }
+      flex-grow: 0;
+      height: 310px; }
   .slider .information {
     line-height: 1.28;
     width: 300px;
@@ -451,90 +460,137 @@ html {
 
 @media screen and (max-width: 1247px) {
   .slider {
-    margin-bottom: 50px; }
+    margin-bottom: 80px; }
     .slider .caption {
-      margin-bottom: 0;
+      margin-bottom: 20px;
       margin-left: 20px;
       font-size: 2em; }
     .slider .swiper-container {
-      height: auto; }
+      height: 300px; }
     .slider .information {
-      width: 80vw;
-      margin: 0 auto; }
+      width: auto;
+      transform: translate(20px);
+      max-width: 80vw;
+      align-self: flex-start; }
       .slider .information:before {
         display: none; }
+      .slider .information .cost {
+        font-size: 22px; }
+      .slider .information .about {
+        font-size: 14px; }
     .slider .swiper-arrow {
       visibility: hidden; }
-    .slider .swiper-slide {
+    .slider .swiper-slide:not(.promo) {
       margin-right: 50px; }
-    .slider .information {
-      transform: translate(20px); }
-    .slider .swiper-slide img {
-      width: 100%;
-      height: 250px; }
+    .slider .swiper-slide.promo {
+      margin-right: 20px;
+      width: 220px; }
     .slider .swiper-slide:first-child {
       margin-left: 10px; }
+    .slider .swiper-slide img {
+      height: 120px; }
 
-  .single {
-    margin-bottom: 50px; }
-    .single .cost {
-      font-size: 14px; }
-    .single .swiper-slide {
-      height: 400px;
-      padding-left: 10px; }
-    .single .caption {
-      padding-bottom: 20px; }
+  .single .barcelona {
+    width: 190.9090909091px; }
+  .single .mini_best-2 {
+    width: 218.1818181818px; }
+  .single .keddi {
+    width: 181.8181818182px; }
+  .single .uyout {
+    width: 231.8181818182px; }
+  .single .klaus-7 {
+    width: 227.2727272727px; }
+  .single .mini_best_01 {
+    width: 227.2727272727px; }
+  .single .mini_best_02 {
+    width: 190.9090909091px; }
+  .single .information p.about {
+    height: 54px; }
 
+  .transformers .hardy_middle {
+    width: 262.5px; }
+  .transformers .stenford {
+    width: 250px; }
+  .transformers .city {
+    width: 287.5px; }
+  .transformers .mini_best_big {
+    width: 283.3333333333px; }
+  .transformers .morfei-1 {
+    width: 237.5px; }
+  .transformers .chelsi {
+    width: 291.6666666667px; }
   .transformers .swiper-slide {
     margin-right: 0px;
-    width: 80vw;
     padding-right: 20px; }
   .transformers .information {
     padding-top: 10px; }
-    .transformers .information .cost {
-      font-size: 1.5em; }
-  .transformers .swiper-container {
-    height: 400px; }
 
-  .eco {
-    height: 400px;
-    margin-bottom: 50px; }
-    .eco .swiper-slide {
-      width: 90vw; }
-      .eco .swiper-slide:not(:first-of-type) {
-        padding-left: 10px; }
-      .eco .swiper-slide img {
-        width: 100%;
-        height: 250px; }
-    .eco .eco-promo {
-      width: 220px;
-      height: 350px;
-      padding: 25px 0 0 10px; }
-      .eco .eco-promo:before {
-        width: 45px;
-        height: 55px; }
-      .eco .eco-promo:after {
-        border-top: 170px solid transparent;
-        border-bottom: 170px solid transparent; }
-      .eco .eco-promo h3 {
-        font-size: 25px; }
-
-  .premium .swiper-slide {
-    width: 100vw; }
-    .premium .swiper-slide img {
-      width: 100%;
-      height: 200px; }
-  .premium .caption {
-    padding-bottom: 20px; }
-  .premium .premium-promo {
-    width: 250px;
+  .eco .manolo_01 {
+    width: 277.5px; }
+  .eco .milly {
+    width: 250px; }
+  .eco .conti {
+    width: 250px; }
+  .eco .torino {
+    width: 250px; }
+  .eco .morfei-2 {
+    width: 215px; }
+  .eco .manolo_02 {
+    width: 250px; }
+  .eco .eco-promo {
+    width: 200px;
     height: 270px;
-    padding: 35px 0 0 0;
-    margin-left: 20px; }
+    padding: 45px 10px 0 20px;
+    margin-top: 30px; }
+    .eco .eco-promo:before {
+      width: 45px;
+      height: 55px;
+      left: 20px; }
+    .eco .eco-promo:after {
+      border-top-width: 135px;
+      border-bottom-width: 135px;
+      border-left-width: 40px;
+      right: -40px; }
+    .eco .eco-promo h3 {
+      font-size: 20px;
+      margin-bottom: 16px; }
+    .eco .eco-promo p {
+      font-size: 14px; }
+  .eco .information p.about {
+    height: 54px; }
+
+  .premium .mini_best_big {
+    width: 477.5px; }
+  .premium .royal {
+    width: 277.5px; }
+  .premium .best {
+    width: 450px; }
+  .premium .jeneva {
+    width: 370px; }
+  .premium .lozanna {
+    width: 325px; }
+  .premium .hardy_red {
+    width: 470px; }
+  .premium .premium-promo {
+    width: 210px;
+    height: auto;
+    padding: 20px 8px 20px 8px;
+    margin-left: 20px;
+    margin-top: 30px;
+    outline-width: 3px; }
     .premium .premium-promo h3 {
       font-size: 1.5em;
       margin-bottom: 10px;
-      padding-left: 10px; } }
+      padding-left: 10px; }
+    .premium .premium-promo:before {
+      width: 50px;
+      height: 45px;
+      left: 20px;
+      top: -30px; }
+    .premium .premium-promo ul {
+      font-size: 14px; }
+    .premium .premium-promo li {
+      margin-bottom: 6px; } }
 .top-footer .top-footer-content {
   width: 100%;
   height: 700px;

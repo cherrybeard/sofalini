@@ -2,6 +2,10 @@
 	.features {
 		height: auto;
 		flex-direction: column;
+		padding: 0 10px;
+		%features-block {
+			margin-bottom: 20px;
+		}
 		%features-block:before {
 			margin: 0 auto;
 		}

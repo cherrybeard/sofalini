@@ -2,22 +2,24 @@
 	.header {
 		.swiper-arrow { display: none; }
 		.logo {
-			left: 2%;
-			top: 90px; }
+			left: 20px;
+			top: 30px; }
 		h1 {
 			font-size: 30px;
 			width: 80%;
 			bottom: 25%; }
 
-		.contacts{
-			right: 10px;
-			text-align: right;
+		.contacts {
+			top: 90px;
+			left: 20px;
+			align-items: flex-start;
+			flex-direction: column;
 			a {
 				width: 150px;
 				padding: 12px 20px 12px 0; }
-			.callback { width: 150px; }
+			.callback { width: 180px; }
 		}
-	
+
 	}
 }
 @include mq("phone", max) {

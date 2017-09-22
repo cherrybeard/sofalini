@@ -1,88 +1,112 @@
 @include mq("desktop", max) {
 	.slider {
-		margin-bottom: 50px;
-		.caption { 
-			margin-bottom: 0;
+		margin-bottom: 80px;
+		.caption {
+			margin-bottom: 20px;
 			margin-left: 20px;
-			font-size: 2em;}
-		.swiper-container { height: auto;}
+			font-size: 2em;
+		}
+		.swiper-container { height: 300px;}
 		.information {
-			width: 80vw;
-			margin: 0 auto;
+			width: auto;
+			transform: translate(20px);
+			max-width: 80vw;
+			align-self: flex-start;
 			&:before { display: none;}
+			.cost { font-size: 22px; }
+			.about { font-size: 14px; }
 		}
 		.swiper-arrow { visibility: hidden; }
 		.swiper-slide {
-			margin-right: 50px;
-		}
-		.information { transform: translate(20px); }
-		.swiper-slide {img { width: 100%; height: 250px;}}
-		.swiper-slide:first-child  {
-			margin-left: 10px;
+			&:not(.promo){ margin-right: 50px;}
+			&.promo { margin-right: 20px; width: 220px; }
+			&:first-child  { margin-left: 10px; }
+			img { height: 120px;}
 		}
 	}
 // SINGLE MEDIA
 // --------------
 	.single {
-		margin-bottom: 50px;
-		.cost { font-size: 14px; }
-		.swiper-slide { height: 400px; padding-left: 10px;}
-		.caption { padding-bottom: 20px; }
+		$multiple: 1.1;
+		.barcelona { width: 210px/$multiple; }
+		.mini_best-2 { width: 240px/$multiple; }
+		.keddi { width: 200px/$multiple; }
+		.uyout { width: 255px/$multiple; }
+		.klaus-7 { width: 250px/$multiple; }
+		.mini_best_01 { width: 250px/$multiple; }
+		.mini_best_02 { width: 210px/$multiple; }
+		.information p.about { height: 54px; }
 	}
 
 // --------------
 // TRANSFORMERS
 // --------------
 	.transformers {
-		.swiper-slide {margin-right: 0px; width: 80vw; padding-right: 20px;}
+		$multiple: 2.4;
+		.hardy_middle { width: 630px/$multiple; }
+		.stenford { width: 600px/$multiple; }
+		.city { width: 690px/$multiple; }
+		.mini_best_big { width: 680px/$multiple; }
+		.morfei-1 { width: 570px/$multiple; }
+		.chelsi { width: 700px/$multiple; }
+		.swiper-slide {margin-right: 0px; padding-right: 20px;}
 		.information {
 			padding-top: 10px;
-			.cost { font-size: 1.5em;}
 		}
-		.swiper-container { height: 400px; }
 	}
 // --------------
 // ECO
 // --------------
 .eco {
-	height: 400px;
-	margin-bottom: 50px;
-	.swiper-slide {
-		width: 90vw;
-		&:not(:first-of-type) { padding-left: 10px; }
-		img { width: 100%; height: 250px;}
-	}
+	$multiple: 2;
+	.manolo_01 { width: 555px/$multiple; }
+	.milly { width: 500px/$multiple; }
+	.conti { width: 500px/$multiple; }
+	.torino { width: 500px/$multiple; }
+	.morfei-2 { width: 430px/$multiple; }
+	.manolo_02 { width: 250px; }
+
 	.eco-promo {
-		width: 220px;
-		height: 350px;
-		padding: 25px 0 0 10px;
-		&:before { width: 45px; height: 55px; }
+		width: 200px;
+		height: 270px;
+		padding: 45px 10px 0 20px;
+		margin-top: 30px;
+		&:before { width: 45px; height: 55px; left: 20px;}
 		&:after {
-			border-top: 170px solid transparent;
-    		border-bottom: 170px solid transparent;
+			border-top-width: 135px;
+  		border-bottom-width: 135px;
+			border-left-width: 40px;
+			right: -40px;
 		}
-		h3 {
-			font-size: 25px;
-		}
+		h3 { font-size: 20px; margin-bottom: 16px; }
+		p { font-size: 14px; }
 	}
+	.information p.about { height: 54px; }
 
 }
 // --------------
 // PREMIUM
 // --------------
 .premium {
-	.swiper-slide { 
-		width: 100vw;
-		img { width: 100%; height: 200px;}
-	}
-	.caption { padding-bottom: 20px;}
-	// .information { width: 80vw; margin: 0 auto;}
+	$multiple: 2;
+	.mini_best_big { width: 955px/$multiple; }
+	.royal { width: 555px/$multiple; }
+	.best { width: 900px/$multiple; }
+	.jeneva { width: 740px/$multiple; }
+	.lozanna { width: 650px/$multiple; }
+	.hardy_red { width: 940px/$multiple; }
+
 	.premium-promo {
-		width: 250px;
-		height: 270px;
-		padding: 35px 0 0 0;
+		width: 210px;
+		height: auto;
+		padding: 20px 8px 20px 8px;
 		margin-left: 20px;
-		h3 {font-size: 1.5em; margin-bottom: 10px; padding-left: 10px;}
+		margin-top: 30px;
+		outline-width: 3px;
+		h3 { font-size: 1.5em; margin-bottom: 10px; padding-left: 10px;}
+		&:before { width: 50px; height: 45px; left: 20px; top: -30px}
+		ul { font-size: 14px; }
+		li { margin-bottom: 6px; }
 	}
 }
 }
