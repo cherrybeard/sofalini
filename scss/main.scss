@@ -1,17 +1,17 @@
 @import "reset.scss";
 @import "mixins.scss";
 
-@import "ui/fonts";
-@import "ui/color";
-@import "ui/buttons";
-@import "ui/text-input";
-@import "ui/main";
-@import "ui/promo";
+@import "UI/fonts";
+@import "UI/color";
+@import "UI/buttons";
+@import "UI/text-input";
+@import "UI/main";
+@import "UI/promo";
 
-@import "header/header", "header/slider-header";//, "header/_media-header";
-@import "features/features";//, "features/_media-features";
+@import "header/header", "header/slider-header", "header/_media-header";
+@import "features/features", "features/_media-features";
 @import "slider/slider.scss",
-"slider/transformers", "slider/single", "slider/eco", "slider/premium"; // "slider/_media-slider.scss",
-@import "footer/main-footer";//, "footer/_media-main-footer";
+"slider/transformers", "slider/single", "slider/eco", "slider/premium", "slider/_media-slider";
+@import "footer/main-footer", "footer/_media-main-footer";
 @import "footer/bottom-footer";
-@import "discount-banner/discount-banner";//, "discount-banner/_media-discount";
+@import "discount-banner/discount-banner", "discount-banner/_media-discount";

@@ -1,14 +1,70 @@
 @include mq("desktop", max) {
-	.swiper-container {
+	.slider {
 		.caption { 
-			left: 20px;
-			top: 20px;
+			margin-left: 20px;
 			font-size: 2em;}
 
 		.information {
-			left: 10%;
 			&:before { display: none;}
 		}
 		.swiper-arrow { visibility: hidden; }
+		.swiper-slide {
+			margin-right: 50px;
+		}
+		.information { transform: translate(20px); }
+		.swiper-slide:first-child  {
+			margin-left: 10px;
+		}
 	}
+// SINGLE MEDIA
+// --------------
+	.single {
+		margin-bottom: 50px;
+		.cost { font-size: 14px; }
+		.swiper-container { height: auto; }
+		.swiper-slide { height: 400px; }
+		
+		
+	}
+
+// --------------
+// TRANSFORMERS
+// --------------
+	.transformers {
+		.swiper-slide {margin-right: 0px;}
+		.hardy_middle { width: 300px;}
+		.stenford { width: 300px; }
+		.city { width: 345px; }
+		.mini_best_big { width: 340px; }
+		.morfei-1 { width: 235px; }
+		.chelsi { width: 350px; }
+		.information {
+			padding-top: 10px;
+			.cost { font-size: 1.5em;}
+		}
+
+		.swiper-container { height: 400px; }
+		.swiper-slide {
+			img { width: 250px; height: 250px;}
+		}
+	}
+// --------------
+// ECO
+// --------------
+.eco {
+	.eco-promo {
+		width: 220px;
+		height: 350px;
+		// padding-top: 20px;
+		padding: 50px 0 0 10px;
+		&:before {width: 45px; height: 55px;}
+		&:after {
+			border-top: 170px solid transparent;
+    		border-bottom: 170px solid transparent;
+		}
+		h3 {
+			font-size: 25px;
+		}
+	}
+}
 }

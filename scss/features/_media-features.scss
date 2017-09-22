@@ -2,11 +2,17 @@
 	.features {
 		height: auto;
 		flex-direction: column;
-
+		%features-block:before {
+			margin: 0 auto;
+		}
 		.choice,
 		.credit,
 		.delivery {
 			width: 100%;
+			h3, p {
+				text-align: center;
+			}
+
 		}
 	}
 }

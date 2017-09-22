@@ -22,4 +22,5 @@
 }
 
 @include mq("desktop", max) {
+	.bottom-footer { box-sizing: border-box; padding: 0 10px;}
 }

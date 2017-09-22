@@ -1,24 +1,19 @@
 @include mq("desktop", max) {
 	.discount-banner {
 		height: 300px;
-		width: 100%;
-	}
-	.discount-offer {
-		flex-direction: column;
-		padding: 0;
-	}
+		width: 100%;}
 
 	.discount-offer {
-		height: 450px;
+		height: 350px;
+		flex-direction: column;
+		padding: 0;
 		span {
 			top: -50px;
-			left: 5%;
-		}
+			left: 5%;}
 		h3 {
 			align-self: flex-start;
 			padding-left: 25px;
-			padding-top: 70px;
-		}
+			padding-top: 70px;}
 		.get-promo {
 			display: flex;
 			flex-direction: column;
@@ -28,17 +23,33 @@
 				text-align: center;
 				width: 90%;
 				margin: 0 auto;
-				padding-bottom: 20px;
-			}
+				padding-bottom: 20px;}
 			button {
 				margin-top: 20px;
 				position: relative;
-				left: auto;
-			}
+				left: auto;}
 		}
 	}
 
 	.options {
+		flex-direction: column;
+		&:not(.options-opened) { height: 350px; }
+		&.options-opened {
+			height: 450px;
+			.options-describe { padding: 0; }			
+			.text-input { margin-top: 20px; }
+			.options-right{ width: 90%; }
+			button { margin: 20px auto; }
+			
+		}
+		.options-left {	padding: 0; }
+		.options-right { margin-left: 0; width: 100%; }
+		.options-invite {
+			flex-direction: column;
+			p {
+				padding-bottom: 20px;
+				text-align: center;}
+		}
 		h3 {text-align: center;
 			padding: 50px 10px 10px 0;
 			width: 100%;}

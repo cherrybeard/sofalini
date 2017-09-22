@@ -7,6 +7,7 @@ $(function() {
       effect: 'fade',
       autoplay: 5000,
       loop: true
+
   });
 
 	DEFAULT_SLIDER = {

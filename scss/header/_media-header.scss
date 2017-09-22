@@ -1,12 +1,25 @@
 @include mq("tablet-small", max) {
 	.header {
+		.swiper-arrow { display: none; }
+		.logo {
+			left: 2%;
+			top: 90px; }
 		h1 {
 			font-size: 30px;
 			width: 80%;
-			bottom: 25%;
+			bottom: 25%; }
+
+		.contacts{
+			right: 10px;
+			text-align: right;
+			a {
+				width: 150px;
+				padding: 12px 20px 12px 0; }
+			.callback { width: 150px; }
 		}
-		.callback {
-			margin-top: 20px;
-		}
+	
 	}
+}
+@include mq("phone", max) {
+	.header h1 { font-size: 20px;}
 }
