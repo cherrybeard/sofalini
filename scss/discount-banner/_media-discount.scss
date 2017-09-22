@@ -35,6 +35,7 @@
 		flex-direction: column;
 		&:not(.options-opened) { height: 350px; }
 		&.options-opened {
+			span {top: -80px;}
 			height: 450px;
 			.options-describe { padding: 0; }			
 			.text-input { margin-top: 20px; }

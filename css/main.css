@@ -458,14 +458,20 @@ html {
       font-size: 2em; }
     .slider .swiper-container {
       height: auto; }
-    .slider .information:before {
-      display: none; }
+    .slider .information {
+      width: 80vw;
+      margin: 0 auto; }
+      .slider .information:before {
+        display: none; }
     .slider .swiper-arrow {
       visibility: hidden; }
     .slider .swiper-slide {
       margin-right: 50px; }
     .slider .information {
       transform: translate(20px); }
+    .slider .swiper-slide img {
+      width: 100%;
+      height: 250px; }
     .slider .swiper-slide:first-child {
       margin-left: 10px; }
 
@@ -484,15 +490,11 @@ html {
     width: 80vw;
     padding-right: 20px; }
   .transformers .information {
-    width: 80vw;
     padding-top: 10px; }
     .transformers .information .cost {
       font-size: 1.5em; }
   .transformers .swiper-container {
     height: 400px; }
-  .transformers .swiper-slide img {
-    width: 100%;
-    height: 250px; }
 
   .eco {
     height: 400px;
@@ -504,13 +506,10 @@ html {
       .eco .swiper-slide img {
         width: 100%;
         height: 250px; }
-    .eco .information {
-      width: 250px;
-      margin: 0 auto; }
     .eco .eco-promo {
       width: 220px;
       height: 350px;
-      padding: 25px 0 0 0; }
+      padding: 25px 0 0 10px; }
       .eco .eco-promo:before {
         width: 45px;
         height: 55px; }
@@ -518,7 +517,24 @@ html {
         border-top: 170px solid transparent;
         border-bottom: 170px solid transparent; }
       .eco .eco-promo h3 {
-        font-size: 25px; } }
+        font-size: 25px; }
+
+  .premium .swiper-slide {
+    width: 100vw; }
+    .premium .swiper-slide img {
+      width: 100%;
+      height: 200px; }
+  .premium .caption {
+    padding-bottom: 20px; }
+  .premium .premium-promo {
+    width: 250px;
+    height: 270px;
+    padding: 35px 0 0 0;
+    margin-left: 20px; }
+    .premium .premium-promo h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      padding-left: 10px; } }
 .top-footer .top-footer-content {
   width: 100%;
   height: 700px;
@@ -749,6 +765,8 @@ html {
       height: 350px; }
     .options.options-opened {
       height: 450px; }
+      .options.options-opened span {
+        top: -80px; }
       .options.options-opened .options-describe {
         padding: 0; }
       .options.options-opened .text-input {

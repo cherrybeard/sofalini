@@ -7,6 +7,8 @@
 			font-size: 2em;}
 		.swiper-container { height: auto;}
 		.information {
+			width: 80vw;
+			margin: 0 auto;
 			&:before { display: none;}
 		}
 		.swiper-arrow { visibility: hidden; }
@@ -14,6 +16,7 @@
 			margin-right: 50px;
 		}
 		.information { transform: translate(20px); }
+		.swiper-slide {img { width: 100%; height: 250px;}}
 		.swiper-slide:first-child  {
 			margin-left: 10px;
 		}
@@ -23,11 +26,8 @@
 	.single {
 		margin-bottom: 50px;
 		.cost { font-size: 14px; }
-		// .swiper-container { height: auto; }
 		.swiper-slide { height: 400px; padding-left: 10px;}
-		.caption {padding-bottom: 20px;}
-		
-		
+		.caption { padding-bottom: 20px; }
 	}
 
 // --------------
@@ -35,23 +35,11 @@
 // --------------
 	.transformers {
 		.swiper-slide {margin-right: 0px; width: 80vw; padding-right: 20px;}
-
-		// .hardy_middle { width: 300px;}
-		// .stenford { width: 300px; }
-		// .city { width: 345px; }
-		// .mini_best_big { width: 340px; }
-		// .morfei-1 { width: 235px; }
-		// .chelsi { width: 350px; }
 		.information {
-			width: 80vw;
 			padding-top: 10px;
 			.cost { font-size: 1.5em;}
 		}
-
 		.swiper-container { height: 400px; }
-		.swiper-slide {
-			img { width: 100%; height: 250px;}
-		}
 	}
 // --------------
 // ECO
@@ -61,15 +49,13 @@
 	margin-bottom: 50px;
 	.swiper-slide {
 		width: 90vw;
-		// padding-left: 20px;
-		&:not(:first-of-type) {padding-left: 10px;}
+		&:not(:first-of-type) { padding-left: 10px; }
 		img { width: 100%; height: 250px;}
 	}
-	.information { width: 250px; margin: 0 auto;}
 	.eco-promo {
 		width: 220px;
 		height: 350px;
-		padding: 25px 0 0 0;
+		padding: 25px 0 0 10px;
 		&:before { width: 45px; height: 55px; }
 		&:after {
 			border-top: 170px solid transparent;
@@ -78,8 +64,25 @@
 		h3 {
 			font-size: 25px;
 		}
-
 	}
 
+}
+// --------------
+// PREMIUM
+// --------------
+.premium {
+	.swiper-slide { 
+		width: 100vw;
+		img { width: 100%; height: 200px;}
+	}
+	.caption { padding-bottom: 20px;}
+	// .information { width: 80vw; margin: 0 auto;}
+	.premium-promo {
+		width: 250px;
+		height: 270px;
+		padding: 35px 0 0 0;
+		margin-left: 20px;
+		h3 {font-size: 1.5em; margin-bottom: 10px; padding-left: 10px;}
+	}
 }
 }
