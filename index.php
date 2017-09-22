@@ -34,7 +34,7 @@
 <body>
   <header class="header">
     <div class="logo">Sofalini</div>
-    <div class="contacts"><a href="tel:+7 990 888 3992">+7 990 888 3992</a>
+    <div class="contacts"><a href="tel:+79099388518">+7 909 938 85 18</a>
       <button class="callback">Обратный звонок</button>
       <form action="" method="post" data-form class="callback-form">
         <div class="text-input">
@@ -45,18 +45,18 @@
     </div>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
+        <div class="slide-promo">
+          <h1>До конца сентября<br>-30% на диваны</h1><a href="#discount" class="pickup">Получить промокод</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
         <div class="header-content">
-          <h1>Поможем подобрать диван под&nbsp;ваши предпочтения</h1><a href="#options" class="pickup">Подобрать</a>
+          <h1>Поможем подобрать диван<br>под&nbsp;ваши предпочтения</h1><a href="#options" class="pickup">Подобрать</a>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="slide-master">
-          <h1>Ведущие мастера и дизайнеры интерьера</h1><a href="#transformers" class="pickup">Смотреть модели</a>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide-promo">
-          <h1>До конца сентября -30% на диваны</h1><a href="#discount" class="pickup">Получить промокод</a>
+          <h1>Ведущие мастера<br>и дизайнеры интерьера</h1><a href="#transformers" class="pickup">Смотреть модели</a>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
         <div class="swiper-slide hardy_middle"><img src="img/transformers/hardy_middle.jpg">
           <div class="information">
             <h3>Hardy</h3>
-            <p class="about">Открытая форма, единая легкая конструкция — лидер мягкой мебели в&nbsp;стиле лофты</p>
+            <p class="about">Открытая форма, единая легкая конструкция — лидер мягкой мебели в&nbsp;стиле лофт</p>
             <p class="cost">от 162 822 ₽</p>
           </div>
         </div>
@@ -123,7 +123,7 @@
         <div class="swiper-slide morfei-1"><img src="img/transformers/morfei-1.jpg">
           <div class="information">
             <h3>Морфей-1</h3>
-            <p class="about">Максимум удобства и&nbsp;комфорта, пользующийся огромным спросом у&nbsp;покупателей</p>
+            <p class="about">Максимум удобства и&nbsp;комфорта, пользуется высоким спросом</p>
             <p class="cost">от 77 335 ₽</p>
           </div>
         </div>
@@ -224,28 +224,28 @@
         <div class="swiper-slide uyout"><img src="img/single/uyout.jpg">
           <div class="information">
             <h3>Уют</h3>
-            <p class="about">Модель «Уют» можно идеально подстраивать к&nbsp;имеющемуся интерьеру</p>
+            <p class="about">Модель «Уют» можно идеально подстраивать к&nbsp;интерьеру</p>
             <p class="cost">от 41 653 ₽</p>
           </div>
         </div>
         <div class="swiper-slide klaus-7"><img src="img/single/klaus-7.jpg">
           <div class="information">
             <h3>Клаус-7</h3>
-            <p class="about">Максимальный комфорт отдыхающему человеку</p>
+            <p class="about">Максимальный комфорт отдыхающему</p>
             <p class="cost">от 29 371 ₽</p>
           </div>
         </div>
         <div class="swiper-slide mini_best_01"><img src="img/single/mini_best_01.jpg">
           <div class="information">
             <h3>Mini Best</h3>
-            <p class="about">Велюровое раскладное кресло-кравать</p>
+            <p class="about">Велюровое раскладное кресло-кровать</p>
             <p class="cost">от 62 991 ₽</p>
           </div>
         </div>
         <div class="swiper-slide mini_best_02"><img src="img/single/mini_best_02.jpg">
           <div class="information">
             <h3>Mini Best</h3>
-            <p class="about">Отличный вариант ещё&nbsp;одного посадочного места в&nbsp;вашей гостинной</p>
+            <p class="about">Отличный вариант ещё&nbsp;одного посадочного места в&nbsp;вашей гостиной</p>
             <p class="cost">от 28 869 ₽</p>
           </div>
         </div>
@@ -271,7 +271,7 @@
         <div class="swiper-slide mini_best_big"><img src="img/premium/mini_best_big.jpg">
           <div class="information">
             <h3>Mini Best</h3>
-            <p class="about">«Mini Best» пособен подстраиваться под&nbsp;индивидуальные особенности людей</p>
+            <p class="about">«Mini Best» способен подстраиваться под&nbsp;индивидуальные особенности людей</p>
             <p class="cost">от 212 805 ₽</p>
           </div>
         </div>
@@ -318,11 +318,11 @@
   <section id="options" class="discount-banner options">
     <div class="options-left"><span>?</span>
       <h3>Затрудняетесь в&nbsp;выборе?</h3>
-      <p class="options-describe">Опишите диван, который вы хотите и наши специалисту подберут вам наиболее подходящий вариант.</p>
+      <p class="options-describe">Опишите диван, который вы хотите и наши специалисты подберут вам наиболее подходящий вариант.</p>
     </div>
     <div class="options-right">
       <div class="options-invite">
-        <p>Поможем вам подобрать диван<br>под&nbsp;ваши предпочтения. Это&nbsp;бесплатно!</p>
+        <p>Поможем вам подобрать диван под&nbsp;ваши предпочтения. Это&nbsp;бесплатно!</p>
         <button>Подобрать</button>
       </div>
       <form action="" method="post" data-form class="options-form">
@@ -359,12 +359,12 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer"><a href="tel: +7 990 888 3992">+7 990 888 3992</a>
+    <div class="bottom-footer"><a href="tel:+79099388518">+7 909 938 85 18</a>
       <div class="payment"></div>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-  <script src="script/slider.js"></script>
-  <script src="script/forms.js"></script>
+  <script src="js/slider-min.js"></script>
+  <script src="js/forms-min.js"></script>
 </body>
