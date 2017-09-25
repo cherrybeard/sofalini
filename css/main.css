@@ -271,7 +271,7 @@ html {
   margin-bottom: 100px; }
   .slider .swiper-container {
     position: relative;
-    height: 450px;
+    height: 470px;
     background-color: #fff; }
   .slider .caption {
     font-size: 60px;
@@ -732,7 +732,7 @@ html {
     width: 40%;
     text-align: left;
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: "Rubik", sans-serif;
     font-size: 30px; }
   .options p {
     color: #666; }
