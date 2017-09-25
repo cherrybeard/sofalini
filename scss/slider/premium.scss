@@ -7,20 +7,20 @@
 	.hardy_red { width: 940px; }
 
 	.promo {
-		width: 400px;
+		width: 380px;
 	}
 
 	.premium-promo {
 		@extend %promo;
 		$color: #D19D53;
-		height: 420px;
-		width: 400px;
+		height: 380px;
+		width: 380px;
 		box-sizing: border-box;
 		border: 2px solid $color;
 		outline: 4px solid $color;
 		outline-offset: 4px;
 		margin-top: 60px;
-		padding: 80px 70px 0 50px;
+		padding: 70px 60px 0 40px;
 		position: relative;
 
 		&::before {

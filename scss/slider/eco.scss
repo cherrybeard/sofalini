@@ -7,19 +7,19 @@
 	.manolo_02 { width: 750px; }
 
 	.promo {
-		width: 460px;
+		width: 470px;
 	}
 
 	.eco-promo {
 		@extend %promo;
-		$height: 440px;
+		$height: 400px;
 		background: $color-gray-bg;
-		width: 430px;
+		width: 420px;
 		border-bottom: 8px solid $color-primary;
 		height: $height;
 		position: relative;
 		box-sizing: border-box;
-		padding: 120px 20px 140px 50px;
+		padding: 90px 20px 140px 50px;
 		margin-top: 40px;
 
 		&::before,
@@ -29,8 +29,8 @@
 		}
 
 		&::before {
-			width: 90px;
-			height: 110px;
+			width: 70px;
+			height: 90px;
 			background: url(../img/eco.svg) center/contain no-repeat;
 			top: -26px;
 			left: 50px;

@@ -271,7 +271,7 @@ html {
   margin-bottom: 100px; }
   .slider .swiper-container {
     position: relative;
-    height: 500px;
+    height: 450px;
     background-color: #fff; }
   .slider .caption {
     font-size: 60px;
@@ -283,23 +283,23 @@ html {
     outline: 0;
     position: relative;
     cursor: default;
-    margin-right: 200px; }
-    .slider .swiper-slide:first-child {
-      margin-left: 40px; }
+    margin-right: 60px;
+    margin-left: 40px; }
     .slider .swiper-slide:not(.promo) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end; }
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-top: 40px; }
     .slider .swiper-slide img {
       flex-shrink: 0;
       flex-grow: 0;
-      height: 310px; }
+      height: 280px; }
   .slider .information {
     line-height: 1.28;
     width: 300px;
-    position: relative;
-    padding-top: 40px; }
+    position: relative; }
     .slider .information:before {
       content: "";
       position: absolute;
@@ -373,6 +373,10 @@ html {
   width: 250px; }
 .single .mini_best_02 {
   width: 210px; }
+.single .swiper-slide {
+  margin-right: 120px; }
+  .single .swiper-slide img {
+    height: 230px; }
 .single .information {
   width: 240px;
   transform: translateX(80px); }
@@ -390,29 +394,29 @@ html {
 .eco .manolo_02 {
   width: 750px; }
 .eco .promo {
-  width: 460px; }
+  width: 470px; }
 .eco .eco-promo {
   background: #EEE;
-  width: 430px;
+  width: 420px;
   border-bottom: 8px solid #FE7F12;
-  height: 440px;
+  height: 400px;
   position: relative;
   box-sizing: border-box;
-  padding: 120px 20px 140px 50px;
+  padding: 90px 20px 140px 50px;
   margin-top: 40px; }
   .eco .eco-promo::before, .eco .eco-promo::after {
     content: '';
     position: absolute; }
   .eco .eco-promo::before {
-    width: 90px;
-    height: 110px;
+    width: 70px;
+    height: 90px;
     background: url(../img/eco.svg) center/contain no-repeat;
     top: -26px;
     left: 50px; }
   .eco .eco-promo::after {
     border-left: 70px solid #EEE;
-    border-top: 220px solid transparent;
-    border-bottom: 220px solid transparent;
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
     right: -70px;
     top: 0; }
 
@@ -429,16 +433,16 @@ html {
 .premium .hardy_red {
   width: 940px; }
 .premium .promo {
-  width: 400px; }
+  width: 380px; }
 .premium .premium-promo {
-  height: 420px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   box-sizing: border-box;
   border: 2px solid #D19D53;
   outline: 4px solid #D19D53;
   outline-offset: 4px;
   margin-top: 60px;
-  padding: 80px 70px 0 50px;
+  padding: 70px 60px 0 40px;
   position: relative; }
   .premium .premium-promo::before {
     content: '';
@@ -581,7 +585,7 @@ html {
   .premium .premium-promo {
     width: 210px;
     height: auto;
-    padding: 20px 8px 20px 8px;
+    padding: 20px 8px 10px 8px;
     margin-left: 20px;
     margin-top: 30px;
     outline-width: 3px; }

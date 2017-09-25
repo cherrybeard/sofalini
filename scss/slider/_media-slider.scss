@@ -24,8 +24,7 @@
 			img { height: 120px;}
 		}
 	}
-// SINGLE MEDIA
-// --------------
+
 	.single {
 		$multiple: 1.1;
 		.barcelona { width: 210px/$multiple; }
@@ -38,9 +37,6 @@
 		.information p.about { height: 54px; }
 	}
 
-// --------------
-// TRANSFORMERS
-// --------------
 	.transformers {
 		$multiple: 2.4;
 		.hardy_middle { width: 630px/$multiple; }
@@ -54,59 +50,54 @@
 			padding-top: 10px;
 		}
 	}
-// --------------
-// ECO
-// --------------
-.eco {
-	$multiple: 2;
-	.manolo_01 { width: 555px/$multiple; }
-	.milly { width: 500px/$multiple; }
-	.conti { width: 500px/$multiple; }
-	.torino { width: 500px/$multiple; }
-	.morfei-2 { width: 430px/$multiple; }
-	.manolo_02 { width: 250px; }
 
-	.eco-promo {
-		width: 200px;
-		height: 270px;
-		padding: 45px 10px 0 20px;
-		margin-top: 30px;
-		&:before { width: 45px; height: 55px; left: 20px;}
-		&:after {
-			border-top-width: 135px;
-  		border-bottom-width: 135px;
-			border-left-width: 40px;
-			right: -40px;
+	.eco {
+		$multiple: 2;
+		.manolo_01 { width: 555px/$multiple; }
+		.milly { width: 500px/$multiple; }
+		.conti { width: 500px/$multiple; }
+		.torino { width: 500px/$multiple; }
+		.morfei-2 { width: 430px/$multiple; }
+		.manolo_02 { width: 250px; }
+
+		.eco-promo {
+			width: 200px;
+			height: 270px;
+			padding: 45px 10px 0 20px;
+			margin-top: 30px;
+			&:before { width: 45px; height: 55px; left: 20px;}
+			&:after {
+				border-top-width: 135px;
+	  		border-bottom-width: 135px;
+				border-left-width: 40px;
+				right: -40px;
+			}
+			h3 { font-size: 20px; margin-bottom: 16px; }
+			p { font-size: 14px; }
 		}
-		h3 { font-size: 20px; margin-bottom: 16px; }
-		p { font-size: 14px; }
+		.information p.about { height: 54px; }
 	}
-	.information p.about { height: 54px; }
 
-}
-// --------------
-// PREMIUM
-// --------------
-.premium {
-	$multiple: 2;
-	.mini_best_big { width: 955px/$multiple; }
-	.royal { width: 555px/$multiple; }
-	.best { width: 900px/$multiple; }
-	.jeneva { width: 740px/$multiple; }
-	.lozanna { width: 650px/$multiple; }
-	.hardy_red { width: 940px/$multiple; }
+	.premium {
+		$multiple: 2;
+		.mini_best_big { width: 955px/$multiple; }
+		.royal { width: 555px/$multiple; }
+		.best { width: 900px/$multiple; }
+		.jeneva { width: 740px/$multiple; }
+		.lozanna { width: 650px/$multiple; }
+		.hardy_red { width: 940px/$multiple; }
 
-	.premium-promo {
-		width: 210px;
-		height: auto;
-		padding: 20px 8px 20px 8px;
-		margin-left: 20px;
-		margin-top: 30px;
-		outline-width: 3px;
-		h3 { font-size: 1.5em; margin-bottom: 10px; padding-left: 10px;}
-		&:before { width: 50px; height: 45px; left: 20px; top: -30px}
-		ul { font-size: 14px; }
-		li { margin-bottom: 6px; }
+		.premium-promo {
+			width: 210px;
+			height: auto;
+			padding: 20px 8px 10px 8px;
+			margin-left: 20px;
+			margin-top: 30px;
+			outline-width: 3px;
+			h3 { font-size: 1.5em; margin-bottom: 10px; padding-left: 10px;}
+			&:before { width: 50px; height: 45px; left: 20px; top: -30px}
+			ul { font-size: 14px; }
+			li { margin-bottom: 6px; }
+		}
 	}
-}
 }
