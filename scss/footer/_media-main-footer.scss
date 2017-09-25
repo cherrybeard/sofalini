@@ -8,14 +8,14 @@
 			position: relative;
 			top: auto;
 			left: auto;
-			padding: 25px 0;
-			//text-align: center;
+			padding: 25px 0 40px;
 			font-size: 2em;
 			width: auto;}
 		.address-list { margin-top: 0; }
 		.address {
 			width: 320px;
-			height: 200px;
+			height: 160px;
+			margin-bottom: 60px;
 			h3 { font-size: 22px; }
 			p { font-size: 14px; }
 			.show-map {
