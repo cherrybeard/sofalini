@@ -7,7 +7,11 @@ $(function() {
       effect: 'fade',
       autoplay: 5000,
       loop: true
-
+  });
+	$(".header").hover(function(){
+  	swiperHeader.stopAutoplay();
+  }, function(){
+  	swiperHeader.startAutoplay();
   });
 
 	DEFAULT_SLIDER = {
