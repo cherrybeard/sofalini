@@ -46,17 +46,17 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="slide-promo">
-          <h1>До конца сентября<br>-30% на диваны</h1><a href="#discount" class="pickup">Получить промокод</a>
+          <h1>До конца сентября<br>-30% на диваны</h1><a href="#discount" data-scroll-to="#discount" class="pickup">Получить промокод</a>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="header-content">
-          <h1>Поможем подобрать диван<br>под&nbsp;ваши предпочтения</h1><a href="#options" class="pickup">Подобрать</a>
+          <h1>Поможем подобрать диван под&nbsp;ваши предпочтения</h1><a href="#options" data-scroll-to="#options" class="pickup">Подобрать</a>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="slide-master">
-          <h1>Ведущие мастера<br>и дизайнеры интерьера</h1><a href="#transformers" class="pickup">Смотреть модели</a>
+          <h1>Ведущие мастера<br>и дизайнеры интерьера</h1><a href="#transformers" data-scroll-to="#transformers" class="pickup">Смотреть модели</a>
         </div>
       </div>
     </div>
@@ -342,19 +342,25 @@
         <h2 class="caption">Больше моделей в&nbsp;наших магазинах</h2>
         <div class="address-list">
           <div class="address">
-            <h3>ТК&nbsp;Никольский Парк</h3>
-            <p>г.&nbsp;Балашиха, Носовихинское&nbsp;ш., вл.&nbsp;4, 2&nbsp;этаж</p>
-            <p>с&nbsp;10.00 по&nbsp;20.00 ежедневно</p><a target="_blank" href="https://2gis.ru/moscow/search/никольский%20парк/firm/4504127914707271/tab/firms?queryState=center%2F37.882395%2C55.750313%2Fzoom%2F16" class="show-map">Показать на карте</a>
+            <div class="info">
+              <h3>ТК&nbsp;Никольский Парк</h3>
+              <p>г.&nbsp;Балашиха, Носовихинское&nbsp;ш., вл.&nbsp;4, 2&nbsp;этаж</p>
+              <p>с&nbsp;10.00 по&nbsp;20.00 ежедневно</p>
+            </div><a target="_blank" href="https://2gis.ru/moscow/search/никольский%20парк/firm/4504127914707271/tab/firms?queryState=center%2F37.882395%2C55.750313%2Fzoom%2F16" class="show-map">Показать на карте</a>
           </div>
           <div class="address">
-            <h3>БП&nbsp;Румянцево</h3>
-            <p>22&nbsp;км. Киевского шоссе,&nbsp;4, корпус&nbsp;Б, 5&nbsp;подъезд, этаж&nbsp;2, сектор&nbsp;В-4</p>
-            <p>с&nbsp;10.00 по&nbsp;21.00 ежедневно</p><a target="_blank" href="https://2gis.ru/moscow/search/бп%20румянцево/geo/4504286833934441/tab/geo?queryState=center%2F37.431839%2C55.635452%2Fzoom%2F16" class="show-map">Показать на карте</a>
+            <div class="info">
+              <h3>БП&nbsp;Румянцево</h3>
+              <p>22&nbsp;км. Киевского шоссе,&nbsp;4, корпус&nbsp;Б, 5&nbsp;подъезд, этаж&nbsp;2, сектор&nbsp;В-4</p>
+              <p>с&nbsp;10.00 по&nbsp;21.00 ежедневно</p>
+            </div><a target="_blank" href="https://2gis.ru/moscow/search/бп%20румянцево/geo/4504286833934441/tab/geo?queryState=center%2F37.431839%2C55.635452%2Fzoom%2F16" class="show-map">Показать на карте</a>
           </div>
           <div class="address">
-            <h3>ТК&nbsp;Каширский двор</h3>
-            <p>Каширское шоссе, д.19, корп&nbsp;2, 1&nbsp;этаж</p>
-            <p>с&nbsp;10.00 по&nbsp;21.00 ежедневно</p><a target="_blank" href="https://2gis.ru/moscow/search/ТК%20Каширский%20двор/firm/4504127908456917/tab/geo?queryState=center%2F37.629357%2C55.664927%2Fzoom%2F16" class="show-map">Показать на карте</a>
+            <div class="info">
+              <h3>ТК&nbsp;Каширский двор</h3>
+              <p>Каширское шоссе, д.19, корп&nbsp;2, 1&nbsp;этаж</p>
+              <p>с&nbsp;10.00 по&nbsp;21.00 ежедневно</p>
+            </div><a target="_blank" href="https://2gis.ru/moscow/search/ТК%20Каширский%20двор/firm/4504127908456917/tab/geo?queryState=center%2F37.629357%2C55.664927%2Fzoom%2F16" class="show-map">Показать на карте</a>
           </div>
         </div>
       </div>
@@ -367,4 +373,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
   <script src="js/slider-min.js"></script>
   <script src="js/forms-min.js"></script>
+  <script src="js/scroller-min.js"></script>
+  <script src="js/main-min.js"></script>
 </body>
