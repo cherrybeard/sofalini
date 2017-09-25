@@ -764,8 +764,8 @@ html {
   height: 110px; }
   .discount-offer span {
     position: absolute;
-    top: -25px;
-    left: -20px;
+    top: -30px;
+    left: 0;
     font-family: "Rubik", sans-serif;
     font-size: 90px;
     text-align: left;
