@@ -13,3 +13,11 @@ $url-lato: '../fonts/lato';
 
 $font-lato: 'Lato', sans-serif;
 $font-rubik: 'Rubik', sans-serif;
+
+%small-caps {
+	color: #666;
+	font-size: 16px;
+	font-family: $font-lato;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}

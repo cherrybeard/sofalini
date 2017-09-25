@@ -8,7 +8,8 @@ $(function() {
 
 	checkInputs = function($inputs){
 		$inputs.each(function(){
-			if (!$(this).val()) {$(this).closest('.text-input').addClass('error'); }
+			var $input = $(this).closest('.text-input');
+			if (!$(this).val()) {$input.addClass('error'); }
 		});
 	};
 

@@ -31,7 +31,14 @@ h1, h2, h3, h4 {
   src: url("../fonts/lato/regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/regular.woff2") format("woff2"), url("../fonts/lato/regular.woff") format("woff"), url("../fonts/lato/regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
-.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button, .header .contacts .callback, .top-footer .show-map {
+.slider .information h3, .popup [data-popup-window=model] h3 {
+  color: #666;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+
+.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button, .popup button[type=submit], .header .contacts .callback, .top-footer .show-map {
   border-radius: 8px;
   color: white;
   font-family: "Rubik", sans-serif;
@@ -44,10 +51,10 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   text-decoration: none; }
 
-.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button {
+.header .contacts .callback-form button, .header .pickup, .options button, .discount-offer button, .popup button[type=submit] {
   border-color: #FE7F12;
   background-color: #FE7F12; }
-  .header .contacts .callback-form button.success, .header .success.pickup, .options button.success, .discount-offer button.success {
+  .header .contacts .callback-form button.success, .header .success.pickup, .options button.success, .discount-offer button.success, .popup button.success[type=submit] {
     background-color: #7ED321;
     border-color: #7ED321; }
 
@@ -60,6 +67,8 @@ h1, h2, h3, h4 {
   border: solid 2px #aaa;
   border-radius: 4px;
   padding: 4px 10px; }
+  .text-input.hidden {
+    display: none; }
   .text-input.error {
     border-color: #ee0000; }
   .text-input.disabled {
@@ -79,6 +88,9 @@ h1, h2, h3, h4 {
 html {
   padding-top: 40px;
   padding-bottom: 20px; }
+
+body.popup-opened {
+  overflow: hidden; }
 
 .header, .features, .top-footer, .bottom-footer {
   padding-left: 40px;
@@ -308,14 +320,11 @@ html {
       background-color: #888888;
       bottom: 10px;
       left: -20px; }
-    .slider .information h3, .slider .information .about {
+    .slider .information .about {
       color: #666;
       font-size: 16px; }
     .slider .information h3 {
-      font-family: "Lato", sans-serif;
-      padding-bottom: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase; }
+      padding-bottom: 10px; }
     .slider .information .cost {
       font-size: 30px;
       font-family: "Rubik", sans-serif;
@@ -867,3 +876,79 @@ html {
       padding: 0 10px;
       text-align: center;
       width: 100%; } }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .popup[data-popup=closed] {
+    display: none; }
+  .popup h2 {
+    font-size: 42px; }
+  .popup p {
+    color: #666; }
+    .popup p.description {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+  .popup button[type=submit] {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px; }
+  .popup .popup-window {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    position: relative; }
+  .popup .popup-close {
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background: none; }
+    .popup .popup-close:hover::before, .popup .popup-close:hover::after, .popup .popup-close:focus::before, .popup .popup-close:focus::after {
+      background: #FF9C91; }
+    .popup .popup-close::before, .popup .popup-close::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 3px;
+      width: 36px;
+      background: #DDD;
+      transition: background 0.3s; }
+    .popup .popup-close::before {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .popup .popup-close::after {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+  .popup [data-popup-window=model] form {
+    margin-top: 40px; }
+  .popup [data-popup-window=model] img {
+    height: 100px; }
+  .popup [data-popup-window=model] h3 {
+    margin-top: 10px; }
+  .popup [data-popup-window=model] .information p {
+    margin-top: 4px; }
+  .popup [data-popup-window=model] .cost {
+    font-family: "Rubik", sans-serif;
+    color: black;
+    font-size: 28px; }
+  .popup [data-popup-window=model] .model {
+    border-left: 1px solid #aaa;
+    padding-left: 30px; }
+
+@media screen and (max-width: 639px) {
+  .popup h2 {
+    font-size: 24px; }
+  .popup .popup-window {
+    padding: 20px; }
+  .popup .about {
+    display: none; } }

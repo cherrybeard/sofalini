@@ -1,0 +1,109 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(black, 0.6);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	&[data-popup=closed] {
+		display: none;
+	}
+
+	h2 {
+		font-size: 42px;
+	}
+
+	p {
+		color: #666;
+
+		&.description {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+	}
+
+	button[type=submit] {
+		@extend %button-primary;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 10px;
+	}
+
+	.popup-window {
+		width: 400px;
+		background: white;
+		padding: 40px;
+		position: relative;
+	}
+
+	.popup-close {
+		$size: 30px;
+		border: none;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 0;
+		width: $size;
+		height: $size;
+		background: none;
+
+		&:hover, &:focus {
+			&::before, &::after { background: #FF9C91 }
+		}
+
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 3px;
+			width: 36px;
+			background: #DDD;
+			transition: background 0.3s;
+		}
+
+		&::before { transform: translate(-50%, -50%) rotate(45deg) }
+
+		&::after { transform: translate(-50%, -50%) rotate(-45deg) }
+	}
+
+	[data-popup-window=model] {
+		form { margin-top: 40px; }
+		img { height: 100px; }
+		h3 {
+			@extend %small-caps;
+			margin-top: 10px;
+		}
+		.information {
+			p { margin-top: 4px; }
+		}
+		.cost {
+			font-family: $font-rubik;
+			color: black;
+			font-size: 28px;
+		}
+		.model {
+			border-left: 1px solid #aaa;
+			padding-left: 30px;
+		}
+	}
+}
+
+@include mq("tablet-small", max) {
+	.popup {
+		h2 {
+			font-size: 24px;
+		}
+		.popup-window {
+			padding: 20px;
+		}
+		.about {
+			display: none;
+		}
+	}
+}

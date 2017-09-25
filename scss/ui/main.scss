@@ -1,11 +1,13 @@
 html {
 	padding-top: 40px;
 	padding-bottom: 20px;
-	// min-width: 1200px;
 }
 
-
-
+body {
+	&.popup-opened {
+		overflow: hidden;
+	}
+}
 
 %section-content {
 	padding-left: 40px;
@@ -17,4 +19,3 @@ html {
 		padding: 0;
 	}
 }
-

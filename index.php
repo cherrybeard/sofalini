@@ -369,6 +369,23 @@
       <div class="payment"></div>
     </div>
   </footer>
+  <div data-popup="closed" class="popup">
+    <div data-popup-window="model" class="popup-window">
+      <button data-popup-close class="popup-close">Закрыть</button>
+      <h2>Заявка на диван</h2>
+      <p class="description">Мы свяжемся с вами, чтобы рассказать о доступности и опциях этой модели.</p>
+      <div class="model"></div>
+      <form action="" method="post" data-form class="model-form">
+        <div class="text-input hidden">
+          <input type="text" name="message">
+        </div>
+        <div class="text-input">
+          <input type="email" placeholder="E-mail" name="email">
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
   <script src="js/slider-min.js"></script>
