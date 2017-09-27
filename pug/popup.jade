@@ -1,12 +1,12 @@
 .popup(data-popup="closed")
 	.popup-window(data-popup-window="model")
 		button.popup-close(data-popup-close) Закрыть
-		h2 Заявка на диван
+		h2 Узнать подробнее
 		p.description Мы свяжемся с вами, чтобы рассказать о доступности и опциях этой модели.
 		.model
 		form.model-form(action="" method="post" data-form)
 			.text-input.hidden
 				input(type="text", name="message")
 			.text-input
-				input(type="email", placeholder="E-mail", name="email")
+				input(type="text", placeholder="Телефон", name="phone")
 			button(type="submit") Отправить
