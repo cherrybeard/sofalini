@@ -216,6 +216,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="cost">от 116 071 ₽</p>
           </div>
         </div>
+        <div class="swiper-slide adel"><img src="img/single/adel.jpg">
+          <div class="information">
+            <h3>Адель</h3>
+            <p class="about">Позволит вам принять самое комфортное положение и&nbsp;насладиться отдыхом</p>
+            <p class="cost">от 36 600 ₽</p>
+          </div>
+        </div>
       </div>
       <div class="swiper-arrow swiper-button-prev"></div>
       <div class="swiper-arrow swiper-button-next"></div>
@@ -272,13 +279,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h3>Mini Best</h3>
             <p class="about">Велюровое раскладное кресло-кровать</p>
             <p class="cost">от 62 991 ₽</p>
-          </div>
-        </div>
-        <div class="swiper-slide adel"><img src="img/single/adel.jpg">
-          <div class="information">
-            <h3>Адель</h3>
-            <p class="about">Позволит вам принять самое комфортное положение и&nbsp;насладиться отдыхом</p>
-            <p class="cost">от 36 600 ₽</p>
           </div>
         </div>
       </div>

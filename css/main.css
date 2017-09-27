@@ -386,8 +386,6 @@ body.popup-opened {
   width: 250px; }
 .single .mini_best_02 {
   width: 210px; }
-.single .adel {
-  width: 582px; }
 .single .molli {
   width: 253px; }
 .single .swiper-slide {
@@ -410,6 +408,8 @@ body.popup-opened {
   width: 430px; }
 .eco .manolo_02 {
   width: 750px; }
+.eco .adel {
+  width: 680px; }
 .eco .promo {
   width: 470px; }
 .eco .eco-promo {
@@ -532,8 +532,6 @@ body.popup-opened {
     width: 227.2727272727px; }
   .single .mini_best_02 {
     width: 190.9090909091px; }
-  .single .adel {
-    width: 529.0909090909px; }
   .single .molli {
     width: 230px; }
   .single .information p.about {
@@ -573,6 +571,8 @@ body.popup-opened {
     width: 215px; }
   .eco .manolo_02 {
     width: 250px; }
+  .eco .adel {
+    width: 240px; }
   .eco .eco-promo {
     width: 200px;
     height: 270px;
