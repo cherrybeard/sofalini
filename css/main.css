@@ -777,10 +777,10 @@ body.popup-opened {
   height: 110px; }
   .discount-offer span {
     position: absolute;
-    top: -30px;
-    left: 0;
+    top: 8px;
+    left: 22px;
     font-family: "Rubik", sans-serif;
-    font-size: 90px;
+    font-size: 56px;
     text-align: left;
     color: #fe7f12; }
   .discount-offer h3 {
@@ -788,7 +788,7 @@ body.popup-opened {
     text-align: left;
     font-size: 30px;
     align-self: flex-end;
-    padding-bottom: 10px; }
+    padding-bottom: 12px; }
   .discount-offer button {
     width: 205px;
     vertical-align: bottom; }
@@ -811,13 +811,15 @@ body.popup-opened {
     width: 100%; }
     .discount-banner span {
       left: 50%;
-      top: -40px;
+      top: -60px;
       transform: translateX(-50%); }
 
   .discount-offer {
     height: 350px;
     flex-direction: column;
     padding: 0; }
+    .discount-offer span {
+      top: 10px; }
     .discount-offer h3 {
       align-self: center;
       padding-top: 70px; }

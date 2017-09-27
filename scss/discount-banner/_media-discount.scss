@@ -2,13 +2,14 @@
 	.discount-banner {
 		height: 300px;
 		width: 100%;
-		span { left: 50%; top: -40px; transform: translateX(-50%);}
+		span { left: 50%; top: -60px; transform: translateX(-50%);}
 	}
 
 	.discount-offer {
 		height: 350px;
 		flex-direction: column;
 		padding: 0;
+		span { top: 10px; }
 		h3 { align-self: center; padding-top: 70px;}
 		.get-promo {
 			display: flex;
