@@ -129,7 +129,7 @@
         </div>
         <div class="swiper-slide chelsi"><img src="img/transformers/chelsi.jpg">
           <div class="information">
-            <h3>Челси</h3>
+            <h3>Флеш</h3>
             <p class="about">Символ уюта и&nbsp;комфорта, создающий особую атмосферу в&nbsp;гостиной</p>
             <p class="cost">от 110 540 ₽</p>
           </div>
@@ -240,13 +240,6 @@
             <h3>Mini Best</h3>
             <p class="about">Велюровое раскладное кресло-кровать</p>
             <p class="cost">от 62 991 ₽</p>
-          </div>
-        </div>
-        <div class="swiper-slide mini_best_02"><img src="img/single/mini_best_02.jpg">
-          <div class="information">
-            <h3>Mini Best</h3>
-            <p class="about">Отличный вариант ещё&nbsp;одного посадочного места в&nbsp;вашей гостиной</p>
-            <p class="cost">от 28 869 ₽</p>
           </div>
         </div>
       </div>
@@ -372,7 +365,7 @@
   <div data-popup="closed" class="popup">
     <div data-popup-window="model" class="popup-window">
       <button data-popup-close class="popup-close">Закрыть</button>
-      <h2>Заявка на диван</h2>
+      <h2>Узнать подробнее</h2>
       <p class="description">Мы свяжемся с вами, чтобы рассказать о доступности и опциях этой модели.</p>
       <div class="model"></div>
       <form action="" method="post" data-form class="model-form">
@@ -380,7 +373,7 @@
           <input type="text" name="message">
         </div>
         <div class="text-input">
-          <input type="email" placeholder="E-mail" name="email">
+          <input type="text" placeholder="Телефон" name="phone">
         </div>
         <button type="submit">Отправить</button>
       </form>
