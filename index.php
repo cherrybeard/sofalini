@@ -145,6 +145,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="cost">от 110 540 ₽</p>
           </div>
         </div>
+        <div class="swiper-slide malta"><img src="img/transformers/malta.jpg">
+          <div class="information">
+            <h3>Мальта</h3>
+            <p class="about">Прекрасно впишется в&nbsp;пространство, подчеркнув ваш стиль и&nbsp;характер</p>
+            <p class="cost">от 80 389 ₽</p>
+          </div>
+        </div>
+        <div class="swiper-slide alfa-mini"><img src="img/transformers/alfa-mini.jpg">
+          <div class="information">
+            <h3>Альфа-мини</h3>
+            <p class="about">Простое и&nbsp;одновременно элегантное решение</p>
+            <p class="cost">от 70 145 ₽</p>
+          </div>
+        </div>
       </div>
       <div class="swiper-arrow swiper-button-prev"></div>
       <div class="swiper-arrow swiper-button-next"></div>
@@ -246,11 +260,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="cost">от 29 371 ₽</p>
           </div>
         </div>
+        <div class="swiper-slide molli"><img src="img/single/molli.jpg">
+          <div class="information">
+            <h3>Молли</h3>
+            <p class="about">Современный диван в&nbsp;скандинавском стиле подарит вам уют и&nbsp;комфорт</p>
+            <p class="cost">от 29 070 ₽</p>
+          </div>
+        </div>
         <div class="swiper-slide mini_best_01"><img src="img/single/mini_best_01.jpg">
           <div class="information">
             <h3>Mini Best</h3>
             <p class="about">Велюровое раскладное кресло-кровать</p>
             <p class="cost">от 62 991 ₽</p>
+          </div>
+        </div>
+        <div class="swiper-slide adel"><img src="img/single/adel.jpg">
+          <div class="information">
+            <h3>Адель</h3>
+            <p class="about">Позволит вам принять самое комфортное положение и&nbsp;насладиться отдыхом</p>
+            <p class="cost">от 36 600 ₽</p>
           </div>
         </div>
       </div>
