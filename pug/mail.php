@@ -17,7 +17,12 @@
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			'From: ColorEvent <' . $from . ">\n";
     $to = 'pavlova@blackstonekeeping.com';
-    if (mail($to, $title, $msg, $header))
+    $fromCc = 'sofalini.mebel@yandex.ru';
+		$headerCc = 'MIME-Version: 1.0' . "\n" .
+			'Content-type: text/html; charset=UTF-8'. "\n" .
+			'From: ColorEvent <' . $fromCc . ">\n";
+    $toCc = 'sofalini.mebel@yandex.ru';
+    if (mail($to, $title, $msg, $header) && mail($toCc, $title, $msg, $headerCc))
     	die('1');
 	}
 	if (count($_POST)!=0) die('0');

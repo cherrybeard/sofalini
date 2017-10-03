@@ -17,7 +17,12 @@
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			'From: ColorEvent <' . $from . ">\n";
     $to = 'pavlova@blackstonekeeping.com';
-    if (mail($to, $title, $msg, $header))
+    $fromCc = 'sofalini.mebel@yandex.ru';
+		$headerCc = 'MIME-Version: 1.0' . "\n" .
+			'Content-type: text/html; charset=UTF-8'. "\n" .
+			'From: ColorEvent <' . $fromCc . ">\n";
+    $toCc = 'sofalini.mebel@yandex.ru';
+    if (mail($to, $title, $msg, $header) && mail($toCc, $title, $msg, $headerCc))
     	die('1');
 	}
 	if (count($_POST)!=0) die('0');
@@ -45,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <header class="header">
       <div class="logo">Sofalini</div>
-      <div class="contacts"><a href="tel:+79099388518">+7 909 938 85 18</a>
+      <div class="contacts"><a href="tel:+74956450018">+7 495 645 00 18</a>
         <button class="callback">Обратный звонок</button>
         <form action="" method="post" data-form class="callback-form">
           <div class="text-input">
@@ -57,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slide-promo">
-            <h1>До конца сентября<br>-30% на диваны</h1><a href="#discount" data-scroll-to="#discount" class="pickup">Получить промокод</a>
+            <h1>До конца октября<br>-30% на диваны</h1><a href="#discount" data-scroll-to="#discount" class="pickup">Получить промокод</a>
           </div>
         </div>
         <div class="swiper-slide">
@@ -90,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
     <section id="discount" class="discount-banner discount-offer"><span>-30%</span>
-      <h3>до конца сентября </h3>
+      <h3>до конца октября </h3>
       <form action="" method="post" data-form class="get-promo">
         <label for="get-promo">Получите промокод на электронную почту:</label>
         <div class="text-input">
@@ -397,7 +402,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <div class="bottom-footer"><a href="tel:+79099388518">+7 909 938 85 18</a>
+      <div class="bottom-footer"><a href="tel:+74956450018">+7 495 645 00 18</a>
         <div class="payment"></div>
       </div>
     </footer>
