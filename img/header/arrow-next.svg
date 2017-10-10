@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="36px" viewBox="0 0 20 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow-next</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="arrow-next" fill="#FFFFFF">
-            <path d="M20,18 C20,17.4607414 19.7953757,16.9214828 19.3861272,16.5100423 L3.57791298,0.617160669 C2.75941589,-0.205720223 1.43236991,-0.205720223 0.613872817,0.617160669 C-0.204624272,1.44004156 -0.204624272,2.77419509 0.613872817,3.59707598 L14.9400669,18 L0.613872817,32.402924 C-0.204624272,33.2258049 -0.204624272,34.5599584 0.613872817,35.3828393 C1.43236991,36.2057202 2.75941589,36.2057202 3.57791298,35.3828393 L19.3861272,19.4899577 C19.7953757,19.0785172 20,18.5392586 20,18 L20,18 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
-</svg>
+<svg width="20" height="36" viewBox="0 0 20 36" xmlns="http://www.w3.org/2000/svg"><title>arrow-next</title><desc>Created with Sketch.</desc><path d="M20 18c0-.539-.205-1.079-.614-1.49l-15.808-15.893c-.818-.823-2.146-.823-2.964 0-.818.823-.818 2.157 0 2.98l14.326 14.403-14.326 14.403c-.818.823-.818 2.157 0 2.98s2.146.823 2.964 0l15.808-15.893c.409-.411.614-.951.614-1.49z" fill="#fff"/></svg>
