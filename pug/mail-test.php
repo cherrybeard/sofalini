@@ -12,15 +12,11 @@
 		}
 		$title = 'Заявка с лендинга Sofalini #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'stephen.gusev@gmail.com';
+    $to = 'stephen.gusev@gmail.com,purecoffee@yandex.ru';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
-			'From: ColorEvent <' . $to . ">\n";
-    $toCc = 'palan17teer@gmail.com';
-		$headerCc = 'MIME-Version: 1.0' . "\n" .
-			'Content-type: text/html; charset=UTF-8'. "\n" .
-			'From: ColorEvent <' . $toCc . ">\n";
-    if (mail($to, $title, $msg, $header) && mail($toCc, $title, $msg, $headerCc))
+			"From: Sofalini <hi@sofalini.ru>\n";
+    if (@mail($to, $title, $msg, $header))
     	die('1');
 	}
 	if (count($_POST)!=0) die('0');
