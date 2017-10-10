@@ -419,9 +419,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-    <script src="js/slider-min.js"></script>
-    <script src="js/forms-min.js"></script>
-    <script src="js/scroller-min.js"></script>
-    <script src="js/main-min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

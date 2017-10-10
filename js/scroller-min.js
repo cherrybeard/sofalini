@@ -1,1 +1,0 @@
-$(function(){$.fn.extend({scroller:function(){var t=$.fn.scroller;$(this).each(function(n,o){t.init(o)})}}),$.extend($.fn.scroller,{init:function(t){var n=$(t);n.on("click",function(t){var o=n.attr("data-scroll-to");if(o){t.preventDefault(),pos=$(o).offset().top;var i=$(o).height(),e=$(window).height();$("html, body").animate({scrollTop:pos-(e-i)/2},300)}})}})});
