@@ -104,37 +104,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="swiper-wrapper">
           <div class="swiper-slide hardy_middle"><img src="img/transformers/hardy_middle.jpg">
             <div class="information">
-              <h3>Hardy</h3>
+              <h3>Монако-2</h3>
               <p class="about">Открытая форма, единая легкая конструкция — лидер мягкой мебели в&nbsp;стиле лофт</p>
-              <p class="cost">от 162 822 ₽</p>
+              <p class="cost">от 169 003 ₽</p>
             </div>
           </div>
           <div class="swiper-slide stenford"><img src="img/transformers/stenford.jpg">
             <div class="information">
               <h3>Стенфорд</h3>
               <p class="about">Минималистичный модульный диван-кровать</p>
-              <p class="cost">от 56 463 ₽</p>
+              <p class="cost">от 124 460 ₽</p>
             </div>
           </div>
           <div class="swiper-slide city"><img src="img/transformers/city.jpg">
             <div class="information">
               <h3>Сити</h3>
               <p class="about">Элегантный и оригинальный дизайн и&nbsp;небольшие габариты</p>
-              <p class="cost">от 65 990 ₽</p>
+              <p class="cost">от 159 600 ₽</p>
             </div>
           </div>
           <div class="swiper-slide mini_best_big"><img src="img/transformers/mini_best_big.jpg">
             <div class="information">
-              <h3>Mini Best</h3>
+              <h3>Альфа-Мини</h3>
               <p class="about">Особый комфорт отдыхающему на&nbsp;диван-кровати «Mini Best»</p>
-              <p class="cost">от 100 100 ₽</p>
+              <p class="cost">от 70 145 ₽</p>
             </div>
           </div>
           <div class="swiper-slide morfei-1"><img src="img/transformers/morfei-1.jpg">
             <div class="information">
-              <h3>Морфей-1</h3>
+              <h3>Альфа</h3>
               <p class="about">Максимум удобства и&nbsp;комфорта, пользуется высоким спросом</p>
-              <p class="cost">от 77 335 ₽</p>
+              <p class="cost">от 86 133 ₽</p>
             </div>
           </div>
           <div class="swiper-slide chelsi"><img src="img/transformers/chelsi.jpg">
@@ -203,9 +203,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="swiper-slide morfei-2"><img src="img/eco/morfei-2.jpg">
             <div class="information">
-              <h3>Морфей-2</h3>
+              <h3>Альфа-Лайн Мини</h3>
               <p class="about">Уникальное конструкторское решение повышения комфортности спального места</p>
-              <p class="cost">от 64 991 ₽</p>
+              <p class="cost">от 71 390 ₽</p>
             </div>
           </div>
           <div class="swiper-slide manolo_02"><img src="img/eco/manolo_02.jpg">
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="information">
               <h3>Адель</h3>
               <p class="about">Позволит вам принять самое комфортное положение и&nbsp;насладиться отдыхом</p>
-              <p class="cost">от 36 600 ₽</p>
+              <p class="cost">от 29 070 ₽</p>
             </div>
           </div>
         </div>
@@ -263,21 +263,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="information">
               <h3>Клаус-7</h3>
               <p class="about">Максимальный комфорт отдыхающему</p>
-              <p class="cost">от 29 371 ₽</p>
+              <p class="cost">от 22 178 ₽</p>
             </div>
           </div>
           <div class="swiper-slide molli"><img src="img/single/molli.jpg">
             <div class="information">
               <h3>Молли</h3>
               <p class="about">Современный диван в&nbsp;скандинавском стиле подарит вам уют и&nbsp;комфорт</p>
-              <p class="cost">от 29 070 ₽</p>
+              <p class="cost">от 47 040 ₽</p>
             </div>
           </div>
           <div class="swiper-slide mini_best_01"><img src="img/single/mini_best_01.jpg">
             <div class="information">
-              <h3>Mini Best</h3>
+              <h3>Альфа Мини</h3>
               <p class="about">Велюровое раскладное кресло-кровать</p>
-              <p class="cost">от 62 991 ₽</p>
+              <p class="cost">от 60 842 ₽</p>
             </div>
           </div>
         </div>
@@ -301,21 +301,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="swiper-slide mini_best_big"><img src="img/premium/mini_best_big.jpg">
             <div class="information">
-              <h3>Mini Best</h3>
-              <p class="about">«Mini Best» способен подстраиваться под&nbsp;индивидуальные особенности людей</p>
-              <p class="cost">от 212 805 ₽</p>
+              <h3>Альфа Мини</h3>
+              <p class="about">«Альфа Мини» способен подстраиваться под&nbsp;индивидуальные особенности людей</p>
+              <p class="cost">от 210 532 ₽</p>
             </div>
           </div>
           <div class="swiper-slide royal"><img src="img/premium/royal.jpg">
             <div class="information">
               <h3>Роял</h3>
               <p class="about">Шикарный дизайн дивана покорит ваших гостей</p>
-              <p class="cost">от 195 859 ₽</p>
+              <p class="cost">от 127 680 ₽</p>
             </div>
           </div>
           <div class="swiper-slide best"><img src="img/premium/best.jpg">
             <div class="information">
-              <h3>Best</h3>
+              <h3>Альфа Про</h3>
               <p class="about">Многоплановая модульная система, позволяющая формировать конфигурацию</p>
               <p class="cost">от 318 283 ₽</p>
             </div>
@@ -336,9 +336,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="swiper-slide hardy_red"><img src="img/premium/hardy_red.jpg">
             <div class="information">
-              <h3>Hardy</h3>
-              <p class="about">Диван «Hardy» — возможность не&nbsp;подстраиваться под&nbsp;ситуацию, а&nbsp;владеть ею</p>
-              <p class="cost">от 236 664 ₽</p>
+              <h3>Монако-1</h3>
+              <p class="about">Диван «Монако-1» — возможность не&nbsp;подстраиваться под&nbsp;ситуацию, а&nbsp;владеть ею</p>
+              <p class="cost">от 149 445 ₽</p>
             </div>
           </div>
         </div>
