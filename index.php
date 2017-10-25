@@ -141,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="information">
               <h3>Флеш</h3>
               <p class="about">Символ уюта и&nbsp;комфорта, создающий особую атмосферу в&nbsp;гостиной</p>
-              <p class="cost">от 110 540 ₽</p>
+              <p class="cost">от 116 059 ₽</p>
             </div>
           </div>
           <div class="swiper-slide malta"><img src="img/transformers/malta.jpg">
@@ -158,46 +158,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="cost">от 70 145 ₽</p>
             </div>
           </div>
-          <div class="swiper-slide johns-1"><img src="img/transformers/johns-1.jpg">
-            <div class="information">
-              <h3>Джонс</h3>
-              <p class="about">«Джонс» — ваш новый диван, обладающий вашими давними привычками</p>
-              <p class="cost">от 90 900 ₽</p>
-            </div>
-          </div>
-          <div class="swiper-slide joy"><img src="img/transformers/joy.jpg">
-            <div class="information">
-              <h3>Джой</h3>
-              <p class="about">Яркое украшение вашей гостиной, детской, кабинета или кухни</p>
-              <p class="cost">от 55 650 ₽</p>
-            </div>
-          </div>
           <div class="swiper-slide polo"><img src="img/transformers/polo.jpg">
             <div class="information">
               <h3>Поло</h3>
               <p class="about">Сев на&nbsp;«Поло», вставать с&nbsp;него вам точно не&nbsp;захочется</p>
-              <p class="cost">от 71 900 ₽</p>
+              <p class="cost">от 105 980 ₽</p>
             </div>
           </div>
           <div class="swiper-slide randevu"><img src="img/transformers/randevu.jpg">
             <div class="information">
               <h3>Рандеву</h3>
               <p class="about">«Рандеву» станет местом встречи всех ваших друзей и&nbsp;родных</p>
-              <p class="cost">от 106 350 ₽</p>
-            </div>
-          </div>
-          <div class="swiper-slide duet"><img src="img/transformers/duet.jpg">
-            <div class="information">
-              <h3>Дуэт</h3>
-              <p class="about">Изящный и&nbsp;стильный! Отточенность линий и&nbsp;лаконичный дизайн</p>
-              <p class="cost">от 57 300 ₽</p>
-            </div>
-          </div>
-          <div class="swiper-slide johns-2"><img src="img/transformers/johns-2.jpg">
-            <div class="information">
-              <h3>Джонс</h3>
-              <p class="about">На&nbsp;этот диван не&nbsp;садятся, а&nbsp;проваливаются в&nbsp;его объятья</p>
-              <p class="cost">от 62 150 ₽</p>
+              <p class="cost">от 142 000 ₽</p>
             </div>
           </div>
         </div>
@@ -268,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="information">
               <h3>Фабио</h3>
               <p class="about">Диван в&nbsp;лаконичном рестро-стиле станет изюменкой вашей гостинной</p>
-              <p class="cost">от 83 200 ₽</p>
+              <p class="cost">от 90 720 ₽</p>
             </div>
           </div>
           <div class="swiper-slide malta"><img src="img/eco/malta.jpg">
@@ -276,13 +248,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <h3>Мальта</h3>
               <p class="about">Такой диван обязательно станет свидетельством вашего безупречного вкуса</p>
               <p class="cost">от 66 572 ₽</p>
-            </div>
-          </div>
-          <div class="swiper-slide atlant-2"><img src="img/eco/atlant-2.jpg">
-            <div class="information">
-              <h3>Атлант-2</h3>
-              <p class="about">«Атлант» — это модульный диван нового поколения</p>
-              <p class="cost">от 136 050 ₽</p>
             </div>
           </div>
         </div>
