@@ -247,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="information">
               <h3>Мальта</h3>
               <p class="about">Такой диван обязательно станет свидетельством вашего безупречного вкуса</p>
-              <p class="cost">от 66 572 ₽</p>
+              <p class="cost">от 80 389 ₽</p>
             </div>
           </div>
         </div>
