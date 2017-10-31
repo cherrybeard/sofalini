@@ -1,4 +1,5 @@
-*.codekit
+.sass-cache/
+.codekit-cache
 *.scssc
-*.DS_Store
+.DS_Store
 prepros-6.config
