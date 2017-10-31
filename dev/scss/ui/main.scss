@@ -1,8 +1,3 @@
-html {
-	padding-top: 40px;
-	padding-bottom: 20px;
-}
-
 body {
 	&.popup-opened {
 		overflow: hidden;
@@ -12,10 +7,9 @@ body {
 %section-content {
 	padding-left: 40px;
 	padding-right: 40px;
-}
-@include mq("desktop", max) {
-	html { padding-top: 0; }
-	%section-content {
-		padding: 0;
+
+	@include mq("desktop", max) {
+			padding: 0;
 	}
+	
 }

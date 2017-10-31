@@ -1,28 +1,26 @@
-doctype html
-html(lang='en')
-	head
-		include analytics/ga-head.html
-		meta(charset='UTF-8')
-		
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css")
-		link(rel='stylesheet', href='css/main.css')
-			
-		meta(name='viewport', content='width=device-width')
-		title Sofalini
-	body
-		include analytics/ga-body.html
-		include sections/header
-		include sections/features
-		include sections/discount
-		include sections/transformers
-		include sections/eco
-		include sections/single
-		include sections/premium
-		include sections/options
-		include sections/footer
-		include sections/popup
-		
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js")
-		script(src="js/main.js")
-		include analytics/ga-body-end.html
+extends layouts/app
+
+block variables
+	- title = "Sofalini"
+
+prepend head
+	include analytics/ga-head.html
+	
+block content
+	include analytics/ga-body.html
+	include sections/header
+	include sections/features
+	include sections/discount
+	include sections/transformers
+	include sections/eco
+	include sections/single
+	include sections/premium
+	include sections/options
+	include sections/footer
+	include sections/popup
+	
+block scripts
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js")
+	script(src="js/main.js")
+	include analytics/ga-body-end.html

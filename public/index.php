@@ -22,7 +22,7 @@
 	if (count($_POST)!=0) die('0');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head><!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -417,7 +417,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <div class="bottom-footer"><a href="tel:+74956450018">+7 495 645 00 18</a>
+      <div class="bottom-footer">
+        <div class="left"><a href="tel:+74956450018">+7 495 645 00 18</a><a href="privacy-policy.html">Политика конфиденциальности</a></div>
         <div class="payment"></div>
       </div>
     </footer>

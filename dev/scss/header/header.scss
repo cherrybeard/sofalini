@@ -3,6 +3,7 @@
 	position: relative;
 	height: 80vh;
 	overflow: hidden;
+	margin-top: 40px;
 
 	.header-content {
 		background: #aaa url('../img/header/header_03.jpg') center/cover no-repeat;
@@ -17,15 +18,11 @@
 		height: 100%;}
 
 	.logo {
-		z-index: 99;
+		z-index: 100;
 		position: absolute;
-		font-size: 0;
-		background: url(../img/header/logo.svg) left top no-repeat;
-		background-size: contain;
-		height: 30px;
-		width: 1700px;
 		top: 48px;
-		left: 88px;}
+		left: 88px;
+	}
 
 	.contacts {
 		z-index: 99;
@@ -71,5 +68,11 @@
 		position: absolute;
 		bottom: 10%;
 		left: 5%;
-		width: 205px;}
+		width: 205px;
+	}
+
+	@include mq("desktop", max) {
+		margin-top: 0;
+	}
+
 }

@@ -1,0 +1,38 @@
+.privacy-policy {
+	overflow: hidden;
+	line-height: 1.4;
+	padding: 3rem 2rem;
+
+	.privacy-policy-content {
+		max-width: 800px;
+		margin: auto;
+	}
+
+	p, ul {
+		&:not(:last-child) {
+			margin-bottom: 0.6em;
+		}
+	}
+
+	h1 {
+		font-size: 4rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		line-height: 1;
+	}
+
+	ul {
+		padding-left: 2em;
+	}
+
+	@include mq("phablet", max) {
+		padding: 2rem 1rem;
+
+		h1 {
+			font-size: 1.5rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+}

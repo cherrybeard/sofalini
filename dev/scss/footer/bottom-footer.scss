@@ -1,16 +1,24 @@
 .bottom-footer {
 	@extend %section-content;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	a {
 		line-height: 1.25;
-		letter-spacing: 1px;
-		text-align: right;
-		color: #666666;
+		color: #666;
 		text-decoration: none;
+		display: inline-block;
+
+		&:not([href^=tel]) {
+			border-bottom: solid 1px #888;
+		}
+
+		&:not(:last-child) {
+			margin-right: 2em;
+		}
 	}
 
 	.payment {
@@ -19,13 +27,23 @@
 		background: url(../img/footer/payment.png) center no-repeat;
 		background-size: contain;
 	}
-}
 
-@include mq("desktop", max) {
-	.bottom-footer {
+	@include mq("desktop", max) {
 		box-sizing: border-box;
 		padding: 0 20px;
-		.payment {width: 100px; height: 27px;}
+
+		.payment {
+			width: 100px;
+			height: 27px;
+		}
+
 		a {font-size: 14px;}
 	}
+
+	@include mq("phablet", max) {
+		a:not([href^=tel]) {
+			font-size: 10px;
+		}
+	}
+
 }
