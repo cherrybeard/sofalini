@@ -81,7 +81,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/dev\/pug\/privacy-policy.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
